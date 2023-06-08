@@ -3,12 +3,16 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
 import time
 import requests
 from bs4 import BeautifulSoup
 import csv
 
-driver = webdriver.Chrome()
+options = Options()
+options.headless = True
+
+driver = webdriver.Chrome(options=options)
 
 # change item list to get ~50 responses per search
 groceries = [
@@ -23,7 +27,7 @@ def web_scrape(website, good):
 
     soup = BeautifulSoup(website, 'html5lib')
 
-    print(website)
+    # print(website)
 
     items = []
 
