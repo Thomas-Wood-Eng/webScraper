@@ -3,77 +3,23 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.remote.remote_connection import LOGGER
+from utils import priceParser
 import time
 import requests
 from bs4 import BeautifulSoup
 import csv
+import logging
 
-driver = webdriver.Chrome()
 
-# change item list to get ~50 responses per search
-groceries = [
-    "White bread",
-    "Eggs",
-    "Milk",
-    "Apples",
-    "Chicken breast",
-    "Spinach",
-    "Cheese",
-    "Ground beef",
-    "Rice",
-    "Tomatoes",
-    "Bananas",
-    "Yogurt",
-    "Onions",
-    "Salmon",
-    "Carrots",
-    "Potatoes",
-    "Orange juice",
-    "Strawberries",
-    "Cucumber",
-    "Pasta",
-    "Lettuce",
-    "Peanut butter",
-    "Green beans",
-    "Blueberries",
-    "Watermelon",
-    "Olive oil",
-    "Almonds",
-    "Grapes",
-    "Avocado",
-    "Cereal",
-    "Broccoli",
-    "Orange",
-    "Lemons",
-    "Honey",
-    "Sliced turkey",
-    "Cherries",
-    "Mushrooms",
-    "Bell peppers",
-    "Pineapple",
-    "Sausages",
-    "Tofu",
-    "Coconut milk",
-    "Canned beans",
-    "Hamburger buns",
-    "Frozen peas",
-    "Quinoa",
-    "Greek yogurt",
-    "Cottage cheese",
-    "Sour cream",
-    "Oatmeal",
-    "Mayonnaise",
-    "Salsa",
-    "Parmesan cheese",
-    "Bacon",
-    "Cheddar cheese",
-    "Ice cream",
-    "Green tea",
-    "Honeydew melon",
-    "Dark chocolate",
-    "Ground cinnamon",
-    "Vanilla extract"
-]
+
+LOGGER.setLevel(logging.WARNING)
+
+options = Options()
+options.headless = False
+
+driver = webdriver.Chrome(options=options)
 
 website = "https://voila.ca/"
 
@@ -88,8 +34,6 @@ def web_scrape(website, good):
 
     excluded_properties = ['base__Card-sc-1mnb0pd-4 layout__Placeholder-sc-nb1ebc-1 jIjNlL gjEHMv']
 
-    # print(table)
-
     child_divs = []
 
     for div in table.find_all('div', recursive=False):
@@ -97,33 +41,24 @@ def web_scrape(website, good):
             child_divs.append(div)
 
     for product in child_divs:
-
-        # print(product)
-
         item = {}
         for title in product.findAll('div', attrs={'data-test': 'fop-body'}):
             item['Name'] = title.h3.text
 
         for price in product.findAll('div', attrs={'data-test': 'fop-price-wrapper'}):
-            item['Price'] = price.strong.text
+            item['Price'] = priceParser(price.strong.text)
 
-        items.append(item)
+        if(len(item) == 2):
+            items.append(item)
 
-    filename = good + '.csv'
-    with open(filename, 'w', newline='') as f:
-        w = csv.DictWriter(f, ['Name', 'Price'])
-        w.writeheader()
-        for item in items:
-            if 'Name' in item and 'Price' in item:
-                w.writerow(item)
+    return items
 
 
-def main():
-    for item in groceries:
-        search_product(website, item)
-        web_scrape(driver.current_url, item)
-
+def safeway_main(item):
+    search_product(website, item)
+    items = web_scrape(driver.current_url, item)
     driver.quit()
+    return items
 
 def search_product(store_url, product_keywords):
     driver.switch_to.new_window('tab')
@@ -137,4 +72,4 @@ def search_product(store_url, product_keywords):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    main()
+    safeway_main("Bread")

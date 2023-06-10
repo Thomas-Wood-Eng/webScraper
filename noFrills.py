@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
+from utils import priceParser
 import time
 import requests
 from bs4 import BeautifulSoup
@@ -14,63 +15,40 @@ options.headless = True
 
 driver = webdriver.Chrome(options=options)
 
-# change item list to get ~50 responses per search
-groceries = [
-    "White bread",
-    "Eggs",
-]
-
 website = "https://www.nofrills.ca/"
 
 def web_scrape(website, good):
-    #r = requests.get(website)
 
     soup = BeautifulSoup(website, 'html5lib')
-
-    # print(website)
 
     items = []
 
     table = soup.find('ul', attrs={'data-cruller': 'product-tile-group'})
 
-    # excluded_properties = ['base__Card-sc-1mnb0pd-4 layout__Placeholder-sc-nb1ebc-1 jIjNlL gjEHMv']
-
-    # print(table)
-
     child_divs = []
 
     for div in table.find_all('li', recursive=False):
-        #if not any(prop in div.get('class', []) for prop in excluded_properties):
         child_divs.append(div)
 
     for product in child_divs:
-
-        # print(product)
-
         item = {}
         for title in product.findAll('div', attrs={'class': 'product-tile__details__info'}):
             item['Name'] = title.h3.text
 
         for price in product.findAll('span', attrs={'class': 'price selling-price-list__item__price selling-price-list__item__price--now-price'}):
-            item['Price'] = price.span.text
+            item['Price'] = priceParser(price.span.text)
 
-        items.append(item)
+        if(len(item) == 2):
+            items.append(item)
 
-    filename = good + '2.csv'
-    with open(filename, 'w', newline='') as f:
-        w = csv.DictWriter(f, ['Name', 'Price'])
-        w.writeheader()
-        for item in items:
-            if 'Name' in item and 'Price' in item:
-                w.writerow(item)
+    return items
 
-
-def main():
-    for item in groceries:
-        search_product(website, item)
-        web_scrape(driver.page_source, item)
+def noFrills_main(item):
+    search_product(website, item)
+    items = web_scrape(driver.page_source, item)
 
     driver.quit()
+    return items
 
 def search_product(store_url, product_keywords):
 
@@ -87,9 +65,6 @@ def search_product(store_url, product_keywords):
 
     time.sleep(5)
 
-    #wait = WebDriverWait(driver, 10)
-    #dynamic_content = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "div.dynamic-content")))
-
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    main()
+    noFrills_main("White Bread")

@@ -1,0 +1,658 @@
+{
+  "superstore": [
+    {
+      "Name": "DItalianoThick Slice Original Bread675 g",
+      "Price": 2.99
+    },
+    {
+      "Name": "WonderBread, Sliced White675 g",
+      "Price": 3.39
+    },
+    {
+      "Name": "No NameOriginal Bread675 g",
+      "Price": 2.19
+    },
+    {
+      "Name": "White Bread Sliced450 g",
+      "Price": 2.99
+    },
+    {
+      "Name": "WonderWhite Bread with Fibre675 g",
+      "Price": 3.39
+    },
+    {
+      "Name": "WonderThin Sandwich Bread, White675 g",
+      "Price": 3.39
+    },
+    {
+      "Name": "DempsterFresh White Bread675 g",
+      "Price": 3.59
+    },
+    {
+      "Name": "DItalianoBread Brizzolio Extra Soft Thick Slice600 g",
+      "Price": 2.99
+    },
+    {
+      "Name": "DItalianoThick Sliced Brioche-Style Loaf620 g",
+      "Price": 2.99
+    },
+    {
+      "Name": "WonderWhite Bread White Texas675 g",
+      "Price": 3.39
+    },
+    {
+      "Name": "VillaggioClassico White Bread Italian Style Thick Slice675 g",
+      "Price": 3.99
+    },
+    {
+      "Name": "Country HarvestWhole Grains Bread No Sugar Added600 g",
+      "Price": 3.49
+    },
+    {
+      "Name": "La BaguetterieWhite Miche Sliced800 g",
+      "Price": 5.29
+    },
+    {
+      "Name": "DItalianoThick Sliced Sesame Bread675 g",
+      "Price": 2.99
+    },
+    {
+      "Name": "ACERustic Italian Oval350 g",
+      "Price": 4.59
+    },
+    {
+      "Name": "No Name100% Whole Wheat Bread675 g",
+      "Price": 2.19
+    },
+    {
+      "Name": "White Baguette255 g",
+      "Price": 0.99
+    },
+    {
+      "Name": "Ancient Grain Bread, Sliced560 g",
+      "Price": 3.99
+    },
+    {
+      "Name": "President's ChoiceWhite Crustless Bread Tramezzini250 g",
+      "Price": 4.49
+    },
+    {
+      "Name": "Bamboo Fibre Bread Bin with Bamboo Bread Board Lid-White",
+      "Price": 67.49
+    },
+    {
+      "Name": "Dempster100% Whole Wheat Bread675 g",
+      "Price": 3.59
+    },
+    {
+      "Name": "7 Grain Bread, Sliced570 g",
+      "Price": 3.99
+    },
+    {
+      "Name": "Chia Bread, Sliced450 g",
+      "Price": 4.19
+    },
+    {
+      "Name": "Flax Bread, Sliced450 g",
+      "Price": 3.99
+    },
+    {
+      "Name": "60% Whole Wheat Bread, Sliced450 g",
+      "Price": 2.99
+    },
+    {
+      "Name": "12 Grain Bread, Sliced450 g",
+      "Price": 3.99
+    },
+    {
+      "Name": "President's ChoiceGluten Free White Bread454 g",
+      "Price": 6.29
+    },
+    {
+      "Name": "Wonder100% Whole Wheat Bread675 g",
+      "Price": 3.39
+    },
+    {
+      "Name": "DItalianoItalian Style Grains Sliced Bread600 g",
+      "Price": 2.99
+    },
+    {
+      "Name": "DItalianoThick Sliced Bread 100% Whole Wheat 675 g",
+      "Price": 2.99
+    },
+    {
+      "Name": "ScharArtisan Baker White Bread400 g",
+      "Price": 8.49
+    },
+    {
+      "Name": "President's ChoiceWhole Wheat Crustless Bread Tramezzini250 g",
+      "Price": 4.49
+    },
+    {
+      "Name": "HTBWhite Hard Dough Bread900 g",
+      "Price": 4.89
+    },
+    {
+      "Name": "Wonder100% Whole Wheat Bread Thin Sliced675 g",
+      "Price": 3.39
+    },
+    {
+      "Name": "Wonder100% Whole Wheat + Fibre Bread675 g",
+      "Price": 3.39
+    },
+    {
+      "Name": "Frontier BakeryWhite Bread Greek Pitas425 g",
+      "Price": 1.69
+    },
+    {
+      "Name": "Cuckoo Multi-Functional Bread Maker/21 lb",
+      "Price": 219.99
+    },
+    {
+      "Name": "ZWILLING Pro le blanc 9 inch Bread Knife",
+      "Price": 169.99
+    },
+    {
+      "Name": "Robin HoodBest For Bread Homestyle White Flour5 kg",
+      "Price": 13.49
+    },
+    {
+      "Name": "Swan Nordic SWKA17512WHTN Bread Bin with Bamboo Lid 15cm x 15cm x 35cm White",
+      "Price": 109.99
+    },
+    {
+      "Name": "PC Blue MenuWhite Loaf With Whole Grain450 g",
+      "Price": 4.29
+    },
+    {
+      "Name": "Frigidaire - Bread Maker with 15 Settings 900g Capacity 710 Watts Stainless Steel",
+      "Price": 235.97
+    },
+    {
+      "Name": "CarbonautBread White Gluten Free 550 g",
+      "Price": 9.99
+    },
+    {
+      "Name": "CarbonautBread  White 544 g",
+      "Price": 9.49
+    },
+    {
+      "Name": "La BaguetterieWhite Oval454 g",
+      "Price": 3.79
+    },
+    {
+      "Name": "ACEWhite Baguette350 g",
+      "Price": 3.99
+    },
+    {
+      "Name": "ACEACE White Demi Baguette200 g",
+      "Price": 2.99
+    },
+    {
+      "Name": "Promise Gluten FreeSoft White Loaf480 g",
+      "Price": 7.99
+    }
+  ],
+  "saveOnFoods": [
+    {
+      "Name": "Dempster's - Signature Sesame White Bread, 600 GramOpen product description",
+      "Price": 5.29
+    },
+    {
+      "Name": "Dempster's - Signature Sesame White Bread, 600 GramOpen product description",
+      "Price": 5.29
+    },
+    {
+      "Name": "Dempster's - Signature Sesame White Bread, 600 GramOpen product description",
+      "Price": 5.29
+    },
+    {
+      "Name": "Bake Shop - White Bread Sliced, 567 GramOpen product description",
+      "Price": 2.99
+    },
+    {
+      "Name": "Olivier's Breads - Sour Dough White Bread, 400 GramOpen product description",
+      "Price": 5.29
+    },
+    {
+      "Name": "Olivier's Breads - Sour Dough White Bread, 400 GramOpen product description",
+      "Price": 5.29
+    },
+    {
+      "Name": "Olivier's Breads - Sour Dough White Bread, 400 GramOpen product description",
+      "Price": 5.29
+    },
+    {
+      "Name": "Olivier's Breads - White Sourdough Bread, 800 GramOpen product description",
+      "Price": 7.99
+    },
+    {
+      "Name": "Carbonaut - White Bread, Low Carb, 544 GramOpen product description",
+      "Price": 7.99
+    },
+    {
+      "Name": "Schar - White Bread, 400 GramOpen product description",
+      "Price": 10.99
+    },
+    {
+      "Name": "Bake Shop - Sesame White Bread, 1 EachOpen product description",
+      "Price": 3.79
+    },
+    {
+      "Name": "Wonder - Bread - White + Fibre, 570 GramOpen product description",
+      "Price": 2.99
+    },
+    {
+      "Name": "Wonder - Bread - White + Fibre, 570 GramOpen product description",
+      "Price": 2.99
+    },
+    {
+      "Name": "Wonder - Bread - White + Fibre, 570 GramOpen product description",
+      "Price": 2.99
+    },
+    {
+      "Name": "Rogers - Bread Flour - White Bread, 2.5 KilogramOpen product description",
+      "Price": 7.69
+    },
+    {
+      "Name": "Dempster's - White Bread - Sliced, 570 GramOpen product description",
+      "Price": 4.99
+    },
+    {
+      "Name": "Wonder - Bread - White Soft, 570 GramOpen product description",
+      "Price": 2.99
+    },
+    {
+      "Name": "Bakestone Brothers - White Pita Bread, 6 EachOpen product description",
+      "Price": 3.79
+    },
+    {
+      "Name": "Bakestone Brothers - White Pita Bread, 6 EachOpen product description",
+      "Price": 3.79
+    },
+    {
+      "Name": "Bakestone Brothers - White Pita Bread, 6 EachOpen product description",
+      "Price": 3.79
+    },
+    {
+      "Name": "Western Family - Gluten Free White Sandwich Bread, 454 GramOpen product description",
+      "Price": 5.99
+    },
+    {
+      "Name": "Wonder - Bread Texas Toast White, 570 GramOpen product description",
+      "Price": 2.99
+    },
+    {
+      "Name": "Little Northern Bakehouse - Bread - White Wide Slice Loaf, 567 GramOpen product description",
+      "Price": 7.99
+    },
+    {
+      "Name": "Knead To Bake - White Bread Dough, 1.8 KilogramOpen product description",
+      "Price": 5.39
+    },
+    {
+      "Name": "Portifino Bakery - White Loaf, 675 GramOpen product description",
+      "Price": 6.99
+    },
+    {
+      "Name": "Villaggio - Bread, Artesano Style White Original, 540 GramOpen product description",
+      "Price": 4.79
+    },
+    {
+      "Name": "Aurora - Panko Plain Bread Crumbs, 227 GramOpen product description",
+      "Price": 4.99
+    },
+    {
+      "Name": "Bake Shop - Bread, Country Farm Butter Loaf, 454 GramOpen product description",
+      "Price": 4.49
+    },
+    {
+      "Name": "Villaggio - Bread, Italian Style Classico Thick Slice White, 510 GramOpen product description",
+      "Price": 4.79
+    },
+    {
+      "Name": "Promise Gluten Free - Soft White Loaf, 480 GramOpen product description",
+      "Price": 8.99
+    }
+  ],
+  "safeway": [
+    {
+      "Name": "Compliments Bread White 675 g",
+      "Price": 2.69
+    },
+    {
+      "Name": "Dempster's Enriched White Bread 675 g",
+      "Price": 4.19
+    },
+    {
+      "Name": "Villaggio White Bread Classico Italian Style Thick Slice 675 g",
+      "Price": 4.49
+    },
+    {
+      "Name": "Farm Boy Enriched White Bread Texas Toast 800 g",
+      "Price": 2.99
+    },
+    {
+      "Name": "Villaggio White Bread Artesano Original 600 g",
+      "Price": 4.49
+    },
+    {
+      "Name": "Dempster’s White Thin Sandwich Bread 675 g",
+      "Price": 4.99
+    },
+    {
+      "Name": "Villaggio White Bread Sesame Thick Slice Italian Style 675 g",
+      "Price": 4.49
+    },
+    {
+      "Name": "Villa Di Manno French Bread Sliced 620 g",
+      "Price": 3.49
+    },
+    {
+      "Name": "WW White Bread 450 g",
+      "Price": 5.79
+    },
+    {
+      "Name": "Villa Di Manno Bread Long Calabrese Sliced 675 g",
+      "Price": 5.29
+    },
+    {
+      "Name": "Dempster’s White Sandwich Bread Texas Toast 675 g",
+      "Price": 4.99
+    },
+    {
+      "Name": "Longo's Pan Bread White 500 g",
+      "Price": 3.99
+    },
+    {
+      "Name": "Farm Boy Gluten-Free Tortillas White Corn 450 g",
+      "Price": 4.49
+    },
+    {
+      "Name": "Farm Boy Buns White Thin Slider 380 g (frozen)",
+      "Price": 2.99
+    },
+    {
+      "Name": "Compliments White Eggs Large 12 Count",
+      "Price": 3.79
+    },
+    {
+      "Name": "Lantic Granulated White Sugar 2 kg",
+      "Price": 3.29
+    },
+    {
+      "Name": "Compliments Organic White Cane Sugar 500 g",
+      "Price": 4.99
+    },
+    {
+      "Name": "Villa Di Manno White Baguette 235 g",
+      "Price": 1.49
+    },
+    {
+      "Name": "Ace Bakery Bake Your Own Demi Baguette White 400 g (frozen)",
+      "Price": 5.79
+    },
+    {
+      "Name": "Villaggio Artesano Baguettes Classic White 2 Count 300 g",
+      "Price": 6.29
+    },
+    {
+      "Name": "Ace Bakery Ciabatta Lunga White 390 g",
+      "Price": 3.69
+    },
+    {
+      "Name": "Breadko White Alwatan Pita 400 g",
+      "Price": 3.79
+    },
+    {
+      "Name": "Compliments White Pita Bread 250 g (frozen)",
+      "Price": 3.69
+    },
+    {
+      "Name": "Compliments Mini White Pita Bread 2-Inch 200 g",
+      "Price": 3.69
+    },
+    {
+      "Name": "La Tortilla White Corn & Wheat Soft Tortillas 6 Inch 8 Pack 328 g",
+      "Price": 4.99
+    },
+    {
+      "Name": "Longo's Pita Bread White 335 g",
+      "Price": 1.93
+    },
+    {
+      "Name": "Little Northern Bakehouse Gluten-Free Frozen White Bread Wide Sliced 567 g",
+      "Price": 8.99
+    },
+    {
+      "Name": "Promise Gluten-Free White Soft Loaf 480 g (frozen)",
+      "Price": 8.99
+    },
+    {
+      "Name": "Promise Gluten-Free Vegan Rustic White Cob Loaf 400 g (frozen)",
+      "Price": 7.49
+    },
+    {
+      "Name": "Robin Hood Best Flour For Bread Homestyle White 2.5 kg",
+      "Price": 8.49
+    },
+    {
+      "Name": "Robin Hood Homestyle White Flour Best For Bread Value Size 5 kg",
+      "Price": 12.99
+    },
+    {
+      "Name": "Dons Bakery Buns White Scone 12 Pack 600 g (frozen)",
+      "Price": 6.99
+    },
+    {
+      "Name": "Cookie It Up White Chocolate Cranberry Shorts Cookies 140 g",
+      "Price": 5.49
+    },
+    {
+      "Name": "Don's Bakery Cookies White Chocolate Cranberry 330 g (frozen)",
+      "Price": 7.49
+    },
+    {
+      "Name": "Longo's Gourmet Cookies White Chocolate Macadamia Nut 380 g",
+      "Price": 5.99
+    },
+    {
+      "Name": "Longo's Dinner Rolls White 6 Pack",
+      "Price": 3.49
+    }
+  ],
+  "noFrills": [
+    {
+      "Name": "DItalianoThick Slice Original Bread675 g",
+      "Price": 3.79
+    },
+    {
+      "Name": "WonderBread, Sliced White675 g",
+      "Price": 2.99
+    },
+    {
+      "Name": "No NameOriginal Bread675 g",
+      "Price": 1.99
+    },
+    {
+      "Name": "WonderThin Sandwich Bread, White675 g",
+      "Price": 2.99
+    },
+    {
+      "Name": "DempsterFresh White Bread675 g",
+      "Price": 3.69
+    },
+    {
+      "Name": "DItalianoBread Brizzolio Extra Soft Thick Slice600 g",
+      "Price": 3.79
+    },
+    {
+      "Name": "DItalianoThick Sliced Brioche-Style Loaf620 g",
+      "Price": 3.79
+    },
+    {
+      "Name": "VillaggioClassico White Bread Italian Style Thick Slice675 g",
+      "Price": 3.99
+    },
+    {
+      "Name": "Country HarvestWhole Grains Bread No Sugar Added600 g",
+      "Price": 3.49
+    },
+    {
+      "Name": "La BaguetterieWhite Miche Sliced800 g",
+      "Price": 4
+    },
+    {
+      "Name": "DItalianoThick Sliced Sesame Bread675 g",
+      "Price": 3.79
+    },
+    {
+      "Name": "No Name100% Whole Wheat Bread675 g",
+      "Price": 1.99
+    },
+    {
+      "Name": "White Baguette255 g",
+      "Price": 0.88
+    },
+    {
+      "Name": "Bamboo Fibre Bread Bin with Bamboo Bread Board Lid-White",
+      "Price": 67.49
+    },
+    {
+      "Name": "No NameCracked Wheat Bread675 g",
+      "Price": 1.99
+    },
+    {
+      "Name": "Dempster100% Whole Wheat Bread675 g",
+      "Price": 3.69
+    },
+    {
+      "Name": "President's ChoiceGluten Free White Bread454 g",
+      "Price": 6.29
+    },
+    {
+      "Name": "DItalianoItalian Style Grains Sliced Bread600 g",
+      "Price": 3.79
+    },
+    {
+      "Name": "DItalianoThick Sliced Bread 100% Whole Wheat 675 g",
+      "Price": 3.79
+    },
+    {
+      "Name": "WestonTexas Toast Bread, 100% Whole Wheat675 g",
+      "Price": 2.99
+    },
+    {
+      "Name": "Villa Di MannoWhole Wheat French Bread, Sliced620 g",
+      "Price": 2.99
+    },
+    {
+      "Name": "Cuckoo Multi-Functional Bread Maker/21 lb",
+      "Price": 219.99
+    },
+    {
+      "Name": "ZWILLING Pro le blanc 9 inch Bread Knife",
+      "Price": 169.99
+    },
+    {
+      "Name": "Ready BakeFrozen Bread Dough White445 g",
+      "Price": 6.99
+    },
+    {
+      "Name": "Swan Nordic SWKA17512WHTN Bread Bin with Bamboo Lid 15cm x 15cm x 35cm White",
+      "Price": 109.99
+    },
+    {
+      "Name": "Robin HoodBest For Bread Homestyle White Flour2.5 kg",
+      "Price": 6.49
+    },
+    {
+      "Name": "Frigidaire - Bread Maker with 15 Settings 900g Capacity 710 Watts Stainless Steel",
+      "Price": 235.97
+    },
+    {
+      "Name": "La BaguetterieWhite Baguette326 g",
+      "Price": 3.49
+    },
+    {
+      "Name": "Promise Gluten FreeSoft White Loaf480 g",
+      "Price": 7.99
+    },
+    {
+      "Name": "President's ChoiceBreaded Chicken Strips600 g",
+      "Price": 9.49
+    },
+    {
+      "Name": "CedarLebanese-Style White Pita Bread330 g",
+      "Price": 1.49
+    },
+    {
+      "Name": "Costa Nova - Pearl White Bread plate",
+      "Price": 34.14
+    },
+    {
+      "Name": "President's ChoiceGluten Free Breaded Shrimp340 g",
+      "Price": 10.99
+    },
+    {
+      "Name": "Costa Nova - Livia White Oval bread plate",
+      "Price": 34.14
+    },
+    {
+      "Name": "Costa Nova - Friso White Bread plate",
+      "Price": 34.14
+    },
+    {
+      "Name": "Costa Nova - Alentejo White Appetizer/bread plate",
+      "Price": 35.47
+    },
+    {
+      "Name": "Casafina - Impressions Linen White Appetizer/bread plate",
+      "Price": 31.65
+    },
+    {
+      "Name": "President's ChoiceThick & Crispy Breaded Chicken Burgers, Fully Cooked700 g",
+      "Price": 7.49
+    },
+    {
+      "Name": "Costa Nova - Nova White Bread/appetizer plate",
+      "Price": 34.14
+    },
+    {
+      "Name": "Costa Nova - Redonda White Appetizer/bread plate",
+      "Price": 32.79
+    },
+    {
+      "Name": "Zojirushi Home Bakery Maestro Breadmaker BB-SSC10 1lb Loaf Premium White",
+      "Price": 449.89
+    },
+    {
+      "Name": "ZOJIRUSHI ZO-BB-HAC10WZ - Home Bakery Mini Breadmaker 1 LB (Premium White)",
+      "Price": 317.59
+    },
+    {
+      "Name": "ACEOlive Oil & Sea Salt Mini Crisps 180 g",
+      "Price": 5.39
+    },
+    {
+      "Name": "ACEToasted Sesame Mini Crisps180 g",
+      "Price": 5.39
+    },
+    {
+      "Name": "ACERoasted Garlic Crostino125 g",
+      "Price": 5.39
+    },
+    {
+      "Name": "ACERoasted Garlic Mini Crisps180 g",
+      "Price": 5.39
+    },
+    {
+      "Name": "President's ChoiceMini Pita Crackers, White Cheddar Flavour142 g",
+      "Price": 3.49
+    },
+    {
+      "Name": "Costa Nova - Brisa Salt Appetizer/bread plate",
+      "Price": 36.14
+    }
+  ]
+}
