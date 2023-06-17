@@ -12,12 +12,13 @@ def remove_stopwords(text):
 
     # Tokenize the text
     tokens = word_tokenize(text)
+    print(f"TOCKENS: {tokens}")
 
     # Remove stopwords
     filtered_tokens = [word for word in tokens if word.casefold() not in stop_words]
 
     # Reconstruct the string without stopwords
-    filtered_text = ' '.join(filtered_tokens)
+    # filtered_text = ' '.join(filtered_tokens)
 
-    return filtered_text
+    return filtered_tokens
 
