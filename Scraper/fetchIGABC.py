@@ -39,9 +39,7 @@ headers = {
     'storeID': '5d9504ee-ff3c-4db3-aaba-d4b9f8dc723e',
 }
 
-params = {
-    'term': 'Flour',
-}
+
 
 json_data = {
     'page': 1,
@@ -53,14 +51,20 @@ json_data = {
     'orderby': 'Relevance',
 }
 
-response = requests.post(
-    'https://shop.igabc.com/api/v2/products/search',
-    params=params,
-    cookies=cookies,
-    headers=headers,
-    json=json_data,
+def fetchIGABCMain(term):
+    
+    params = {
+       'term': term,
+    }
+
+    response = requests.post(
+        'https://shop.igabc.com/api/v2/products/search',
+        params=params,
+        cookies=cookies,
+        headers=headers,
+        json=json_data,
 )
 
 
-with open("fetch_IGA-BC.json", "w") as outfile:
+    with open("fetch_IGA-BC.json", "w") as outfile:
         json.dump(response.json(), outfile)

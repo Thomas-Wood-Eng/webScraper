@@ -20,30 +20,32 @@ headers = {
     'x-apikey': '1im1hL52q9xvta16GlSdYDsTsG0dmyhF',
 }
 
-json_data = {
-    'pagination': {
-        'from': 0,
-        'size': 48,
-    },
-    'banner': 'superstore',
-    'cartId': '2b0481d4-4c1e-4cee-aa26-45894a1a9f4d',
-    'lang': 'en',
-    'date': '21062023',
-    'storeId': '1077',
-    'pcId': None,
-    'pickupType': 'STORE',
-    'term': 'bread',
-    'userData': {
-        'domainUserId': '7fcbe398-1fb4-4bad-b1a2-cbd44a2bad91',
-        'sessionId': '23468f0a-9513-47ef-8757-07a9d0327d7d',
-    },
-}
+def fetchSuperstoreMain(query):
 
-response = requests.post('https://api.pcexpress.ca/product-facade/v4/products/search', headers=headers, json=json_data)
+    json_data = {
+        'pagination': {
+            'from': 0,
+            'size': 48,
+        },
+        'banner': 'superstore',
+        'cartId': '2b0481d4-4c1e-4cee-aa26-45894a1a9f4d',
+        'lang': 'en',
+        'date': '21062023',
+        'storeId': '1077',
+        'pcId': None,
+        'pickupType': 'STORE',
+        'term': query,
+        'userData': {
+            'domainUserId': '7fcbe398-1fb4-4bad-b1a2-cbd44a2bad91',
+            'sessionId': '23468f0a-9513-47ef-8757-07a9d0327d7d',
+        },
+    }
 
-print(response.json())
+    response = requests.post('https://api.pcexpress.ca/product-facade/v4/products/search', headers=headers, json=json_data)
 
-with open("fetch_superstore.json", "w") as outfile:
+    # print(response.json())
+
+    with open("fetch_superstore2.json", "w") as outfile:
         json.dump(response.json(), outfile)
 # Note: json_data will not be serialized by requests
 # exactly as it was in the original request.

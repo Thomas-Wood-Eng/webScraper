@@ -43,36 +43,37 @@ headers = {
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
 }
 
-params = {
-    'q': 'bread',
-}
+def fetchSaveOnMain(query):
 
-response = requests.get(
-    'https://www.saveonfoods.com/sm/pickup/rsid/1982/results',
-    params=params,
-    cookies=cookies,
-    headers=headers,
-)
+    params = {
+        'q': query,
+    }
+
+    response = requests.get(
+        'https://www.saveonfoods.com/sm/pickup/rsid/1982/results',
+        params=params,
+        cookies=cookies,
+        headers=headers,
+    )
 
 # data_json = response.json()
 
-soup = BeautifulSoup(response.content, 'html.parser')
+    soup = BeautifulSoup(response.content, 'html.parser')
 
-product_list = []
+    product_list = []
 
-for element in soup.select('[class="AriaProductTitleParagraph--1yc7f4f jFsEKu"]'):
-    splitString = element.text.split('$')
-    if len(splitString) > 1:
-        productName = splitString[0]
-        price = splitString[1]
-        product = {
-            'name': productName.strip(),
-            'price': price.strip()
-        }
-        product_list.append(product)
+    for element in soup.select('[class="AriaProductTitleParagraph--1yc7f4f jFsEKu"]'):
+        splitString = element.text.split('$')
+        if len(splitString) > 1:
+            productName = splitString[0]
+            price = splitString[1]
+            product = {
+                'name': productName.strip(),
+                'price': price.strip()
+            }
+            product_list.append(product)
 
-data_json = json.dumps(product_list)
+    data_json = json.dumps(product_list)
 
-
-with open("fetch_SaveOn.json", "w") as outfile:
-    json.dump(data_json, outfile)
+    with open("fetch_SaveOn2.json", "w") as outfile:
+        json.dump(data_json, outfile)

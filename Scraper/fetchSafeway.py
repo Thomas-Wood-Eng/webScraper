@@ -42,14 +42,15 @@ headers = {
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.51',
 }
 
-params = {
-    'limit': '50',
-    'offset': '0',
-    'term': 'Bread',
-}
+def fetchSafewayMain(query):
 
-response = requests.get('https://voila.ca/api/v5/products/search', params=params, cookies=cookies, headers=headers)
+    params = {
+        'limit': '50',
+        'offset': '0',
+        'term': query,
+    }
 
+    response = requests.get('https://voila.ca/api/v5/products/search', params=params, cookies=cookies, headers=headers)
 
-with open("fetch_safeway.json", "w") as outfile:
+    with open("fetch_safeway2.json", "w") as outfile:
         json.dump(response.json(), outfile)
