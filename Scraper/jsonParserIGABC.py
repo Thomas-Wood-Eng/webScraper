@@ -26,7 +26,7 @@ def parseIGA():
         
         if "Price" in product_data:
             price = product_data["Price"]
-            print(price)
+            # print(price)
             product["price"] = price
         
         productList.append(product)

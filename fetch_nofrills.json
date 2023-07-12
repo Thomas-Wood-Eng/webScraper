@@ -1,8 +1,93 @@
 {
     "query": "bread",
-    "requestId": "a81328d9-c0a0-49a2-a0ed-0db1510a38aa",
+    "requestId": "fc33dd0a-416c-4393-b24a-6e28554ae119",
     "correctedQuery": "bread",
     "results": [
+        {
+            "code": "20660168_EA",
+            "name": "Frozen Butter Croissant",
+            "description": "Contains 3 croissants.<br>",
+            "brand": "ACE",
+            "link": "/frozen-butter-croissant/p/20660168_EA",
+            "imageAssets": [
+                {
+                    "imageUrl": null,
+                    "smallUrl": "https://assets.shop.loblaws.ca/products/20660168/b1/en/front/20660168_front_a01_@2.png",
+                    "mediumUrl": "https://assets.shop.loblaws.ca/products/20660168/b1/en/front/20660168_front_a01_@2.png",
+                    "largeUrl": "https://assets.shop.loblaws.ca/products/20660168/b1/en/front/20660168_front_a01_@2.png",
+                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/20660168/b1/en/front/20660168_front_a01_@2.png",
+                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/20660168/b1/en/front/20660168_front_a01_@2.png",
+                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/20660168/b1/en/front/20660168_front_a01_@2.png"
+                }
+            ],
+            "packageSize": "210 g",
+            "shoppable": true,
+            "prices": {
+                "price": {
+                    "value": 5.89,
+                    "unit": "ea",
+                    "quantity": 1,
+                    "reasonCode": 4,
+                    "type": "REGULAR"
+                },
+                "wasPrice": null,
+                "comparisonPrices": [
+                    {
+                        "value": 2.8,
+                        "unit": "g",
+                        "quantity": 100,
+                        "reasonCode": null,
+                        "type": null
+                    }
+                ]
+            },
+            "pricingUnits": {
+                "type": "SOLD_BY_EACH",
+                "unit": "ea",
+                "interval": 1.0,
+                "minOrderQuantity": 1.0,
+                "maxOrderQuantity": 25.0,
+                "weighted": false
+            },
+            "badges": {
+                "textBadge": null,
+                "loyaltyBadge": null,
+                "dealBadge": null,
+                "newItemBadge": null
+            },
+            "stockStatus": "OK",
+            "articleNumber": "20660168",
+            "uom": "EA",
+            "taxes": null,
+            "fees": null,
+            "sellerId": "7411",
+            "sellerName": "nofrills",
+            "isVariant": false,
+            "offerType": "OG",
+            "hasMultipleOffers": false,
+            "aisle": {
+                "name": "Frozen"
+            },
+            "sponsored": true,
+            "sponsoredCreative": {
+                "adServingId": "bd275a3e-a603-45bd-994e-a47252bd0322",
+                "adPlacement": {
+                    "adPlacementId": "79f18d0b-c6f1-4022-8679-7f7c5a2683f4",
+                    "adPlacementType": "GRID"
+                },
+                "creativeId": "43ef3e14-caa5-41ce-9144-08c67c679b6b",
+                "creativeBrandId": null,
+                "creativeCampaignId": "4bef4e5c-e2c7-4e03-9a14-3ba6bd9647f5",
+                "adGroupId": "0e0fb991-2e27-496c-a7b8-ccc174aad3aa",
+                "creativeCost": {
+                    "costModel": "CPC",
+                    "rate": "sFuItJRaVwHua2euszKFFbQIsGa6GqLY2UfOETaR+z4="
+                },
+                "target": "bread",
+                "searchType": "SPONSORED_SEARCH",
+                "targetAdType": "CATEGORY_ENDEMIC"
+            }
+        },
         {
             "code": "21178642_EA",
             "name": "14 Grains Bread",
@@ -430,6 +515,73 @@
             "sponsored": false
         },
         {
+            "code": "21178967_EA",
+            "name": "Cinnamon Raisin Bread",
+            "description": "Everything We Bake Is Whole Grain And Begins At The Harvest, With Flavourful Yet Nourishing Ingredients. Country Harvest Raisin Cinnamon Bread Is Made With Whole Grains, And Is Perfectly Spiced And Baked With Cinnamon And Sweet Raisins. Pre-Sliced With No Artificial Colours Or Flavours And No Trans Fat.",
+            "brand": "Country Harvest",
+            "link": "/cinnamon-raisin-bread/p/21178967_EA",
+            "imageAssets": [
+                {
+                    "imageUrl": null,
+                    "smallUrl": "https://assets.shop.loblaws.ca/products/21178967/b1/en/front/21178967_front_a01_@2.png",
+                    "mediumUrl": "https://assets.shop.loblaws.ca/products/21178967/b1/en/front/21178967_front_a01_@2.png",
+                    "largeUrl": "https://assets.shop.loblaws.ca/products/21178967/b1/en/front/21178967_front_a01_@2.png",
+                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/21178967/b1/en/front/21178967_front_a01_@2.png",
+                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/21178967/b1/en/front/21178967_front_a01_@2.png",
+                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/21178967/b1/en/front/21178967_front_a01_@2.png"
+                }
+            ],
+            "packageSize": "600 g",
+            "shoppable": true,
+            "prices": {
+                "price": {
+                    "value": 3.99,
+                    "unit": "ea",
+                    "quantity": 1,
+                    "reasonCode": 4,
+                    "type": "REGULAR"
+                },
+                "wasPrice": null,
+                "comparisonPrices": [
+                    {
+                        "value": 0.67,
+                        "unit": "g",
+                        "quantity": 100,
+                        "reasonCode": null,
+                        "type": null
+                    }
+                ]
+            },
+            "pricingUnits": {
+                "type": "SOLD_BY_EACH",
+                "unit": "ea",
+                "interval": 1.0,
+                "minOrderQuantity": 1.0,
+                "maxOrderQuantity": 25.0,
+                "weighted": false
+            },
+            "badges": {
+                "textBadge": null,
+                "loyaltyBadge": null,
+                "dealBadge": null,
+                "newItemBadge": null
+            },
+            "stockStatus": "OK",
+            "articleNumber": "21178967",
+            "uom": "EA",
+            "taxes": null,
+            "fees": null,
+            "sellerId": "7411",
+            "sellerName": "nofrills",
+            "isVariant": false,
+            "offerType": "OG",
+            "hasMultipleOffers": false,
+            "aisle": {
+                "name": "Bakery"
+            },
+            "sponsored": false
+        },
+        {
             "code": "21178630_EA",
             "name": "Whole Grains Bread No Sugar Added",
             "description": "Everything We Bake Is Whole Grain And Begins At The Harvest, With Flavourful Yet Nourishing Ingredients. Country Harvest White Grain Bread With No Sugar Added Contains Wholesome Ingredients That You Can See And Taste That Will Help You Take On The Day.",
@@ -550,73 +702,6 @@
             },
             "stockStatus": "OK",
             "articleNumber": "21509822",
-            "uom": "EA",
-            "taxes": null,
-            "fees": null,
-            "sellerId": "7411",
-            "sellerName": "nofrills",
-            "isVariant": false,
-            "offerType": "OG",
-            "hasMultipleOffers": false,
-            "aisle": {
-                "name": "Bakery"
-            },
-            "sponsored": false
-        },
-        {
-            "code": "21178967_EA",
-            "name": "Cinnamon Raisin Bread",
-            "description": "Everything We Bake Is Whole Grain And Begins At The Harvest, With Flavourful Yet Nourishing Ingredients. Country Harvest Raisin Cinnamon Bread Is Made With Whole Grains, And Is Perfectly Spiced And Baked With Cinnamon And Sweet Raisins. Pre-Sliced With No Artificial Colours Or Flavours And No Trans Fat.",
-            "brand": "Country Harvest",
-            "link": "/cinnamon-raisin-bread/p/21178967_EA",
-            "imageAssets": [
-                {
-                    "imageUrl": null,
-                    "smallUrl": "https://assets.shop.loblaws.ca/products/21178967/b1/en/front/21178967_front_a01_@2.png",
-                    "mediumUrl": "https://assets.shop.loblaws.ca/products/21178967/b1/en/front/21178967_front_a01_@2.png",
-                    "largeUrl": "https://assets.shop.loblaws.ca/products/21178967/b1/en/front/21178967_front_a01_@2.png",
-                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/21178967/b1/en/front/21178967_front_a01_@2.png",
-                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/21178967/b1/en/front/21178967_front_a01_@2.png",
-                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/21178967/b1/en/front/21178967_front_a01_@2.png"
-                }
-            ],
-            "packageSize": "600 g",
-            "shoppable": true,
-            "prices": {
-                "price": {
-                    "value": 3.99,
-                    "unit": "ea",
-                    "quantity": 1,
-                    "reasonCode": 4,
-                    "type": "REGULAR"
-                },
-                "wasPrice": null,
-                "comparisonPrices": [
-                    {
-                        "value": 0.67,
-                        "unit": "g",
-                        "quantity": 100,
-                        "reasonCode": null,
-                        "type": null
-                    }
-                ]
-            },
-            "pricingUnits": {
-                "type": "SOLD_BY_EACH",
-                "unit": "ea",
-                "interval": 1.0,
-                "minOrderQuantity": 1.0,
-                "maxOrderQuantity": 25.0,
-                "weighted": false
-            },
-            "badges": {
-                "textBadge": null,
-                "loyaltyBadge": null,
-                "dealBadge": null,
-                "newItemBadge": null
-            },
-            "stockStatus": "OK",
-            "articleNumber": "21178967",
             "uom": "EA",
             "taxes": null,
             "fees": null,
@@ -832,20 +917,20 @@
             "sponsored": false
         },
         {
-            "code": "21429067_EA",
-            "name": "Protein Bread",
+            "code": "21433366_EA",
+            "name": "Everything Bread",
             "description": null,
             "brand": "Country Harvest",
-            "link": "/protein-bread/p/21429067_EA",
+            "link": "/everything-bread/p/21433366_EA",
             "imageAssets": [
                 {
                     "imageUrl": null,
-                    "smallUrl": "https://assets.shop.loblaws.ca/products/21429067/b1/en/front/21429067_front_a01_@2.png",
-                    "mediumUrl": "https://assets.shop.loblaws.ca/products/21429067/b1/en/front/21429067_front_a01_@2.png",
-                    "largeUrl": "https://assets.shop.loblaws.ca/products/21429067/b1/en/front/21429067_front_a01_@2.png",
-                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/21429067/b1/en/front/21429067_front_a01_@2.png",
-                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/21429067/b1/en/front/21429067_front_a01_@2.png",
-                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/21429067/b1/en/front/21429067_front_a01_@2.png"
+                    "smallUrl": "https://assets.shop.loblaws.ca/products/21433366/b1/en/front/21433366_front_a01_@2.png",
+                    "mediumUrl": "https://assets.shop.loblaws.ca/products/21433366/b1/en/front/21433366_front_a01_@2.png",
+                    "largeUrl": "https://assets.shop.loblaws.ca/products/21433366/b1/en/front/21433366_front_a01_@2.png",
+                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/21433366/b1/en/front/21433366_front_a01_@2.png",
+                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/21433366/b1/en/front/21433366_front_a01_@2.png",
+                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/21433366/b1/en/front/21433366_front_a01_@2.png"
                 }
             ],
             "packageSize": "600 g",
@@ -884,7 +969,74 @@
                 "newItemBadge": null
             },
             "stockStatus": "OK",
-            "articleNumber": "21429067",
+            "articleNumber": "21433366",
+            "uom": "EA",
+            "taxes": null,
+            "fees": null,
+            "sellerId": "7411",
+            "sellerName": "nofrills",
+            "isVariant": false,
+            "offerType": "OG",
+            "hasMultipleOffers": false,
+            "aisle": {
+                "name": "Bakery"
+            },
+            "sponsored": false
+        },
+        {
+            "code": "21509877_EA",
+            "name": "100% Whole Wheat Bread",
+            "description": "<p>100% Whole Wheat Bread will be a daily favourite in your house. Sliced and ready to eat, this vegetarian loaf of bread is perfect for your favourite sandwiches or toasted with your favourite spread in the morning.</pl>",
+            "brand": "No Name",
+            "link": "/100-whole-wheat-bread/p/21509877_EA",
+            "imageAssets": [
+                {
+                    "imageUrl": null,
+                    "smallUrl": "https://assets.shop.loblaws.ca/products/21509877/b1/en/front/21509877_front_a01_@2.png",
+                    "mediumUrl": "https://assets.shop.loblaws.ca/products/21509877/b1/en/front/21509877_front_a01_@2.png",
+                    "largeUrl": "https://assets.shop.loblaws.ca/products/21509877/b1/en/front/21509877_front_a01_@2.png",
+                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/21509877/b1/en/front/21509877_front_a01_@2.png",
+                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/21509877/b1/en/front/21509877_front_a01_@2.png",
+                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/21509877/b1/en/front/21509877_front_a01_@2.png"
+                }
+            ],
+            "packageSize": "675 g",
+            "shoppable": true,
+            "prices": {
+                "price": {
+                    "value": 1.99,
+                    "unit": "ea",
+                    "quantity": 1,
+                    "reasonCode": 4,
+                    "type": "REGULAR"
+                },
+                "wasPrice": null,
+                "comparisonPrices": [
+                    {
+                        "value": 0.29,
+                        "unit": "g",
+                        "quantity": 100,
+                        "reasonCode": null,
+                        "type": null
+                    }
+                ]
+            },
+            "pricingUnits": {
+                "type": "SOLD_BY_EACH",
+                "unit": "ea",
+                "interval": 1.0,
+                "minOrderQuantity": 1.0,
+                "maxOrderQuantity": 25.0,
+                "weighted": false
+            },
+            "badges": {
+                "textBadge": null,
+                "loyaltyBadge": null,
+                "dealBadge": null,
+                "newItemBadge": null
+            },
+            "stockStatus": "OK",
+            "articleNumber": "21509877",
             "uom": "EA",
             "taxes": null,
             "fees": null,
@@ -958,140 +1110,6 @@
             },
             "stockStatus": "OK",
             "articleNumber": "20308743",
-            "uom": "EA",
-            "taxes": null,
-            "fees": null,
-            "sellerId": "7411",
-            "sellerName": "nofrills",
-            "isVariant": false,
-            "offerType": "OG",
-            "hasMultipleOffers": false,
-            "aisle": {
-                "name": "Bakery"
-            },
-            "sponsored": false
-        },
-        {
-            "code": "21433366_EA",
-            "name": "Everything Bread",
-            "description": null,
-            "brand": "Country Harvest",
-            "link": "/everything-bread/p/21433366_EA",
-            "imageAssets": [
-                {
-                    "imageUrl": null,
-                    "smallUrl": "https://assets.shop.loblaws.ca/products/21433366/b1/en/front/21433366_front_a01_@2.png",
-                    "mediumUrl": "https://assets.shop.loblaws.ca/products/21433366/b1/en/front/21433366_front_a01_@2.png",
-                    "largeUrl": "https://assets.shop.loblaws.ca/products/21433366/b1/en/front/21433366_front_a01_@2.png",
-                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/21433366/b1/en/front/21433366_front_a01_@2.png",
-                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/21433366/b1/en/front/21433366_front_a01_@2.png",
-                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/21433366/b1/en/front/21433366_front_a01_@2.png"
-                }
-            ],
-            "packageSize": "600 g",
-            "shoppable": true,
-            "prices": {
-                "price": {
-                    "value": 3.99,
-                    "unit": "ea",
-                    "quantity": 1,
-                    "reasonCode": 4,
-                    "type": "REGULAR"
-                },
-                "wasPrice": null,
-                "comparisonPrices": [
-                    {
-                        "value": 0.67,
-                        "unit": "g",
-                        "quantity": 100,
-                        "reasonCode": null,
-                        "type": null
-                    }
-                ]
-            },
-            "pricingUnits": {
-                "type": "SOLD_BY_EACH",
-                "unit": "ea",
-                "interval": 1.0,
-                "minOrderQuantity": 1.0,
-                "maxOrderQuantity": 25.0,
-                "weighted": false
-            },
-            "badges": {
-                "textBadge": null,
-                "loyaltyBadge": null,
-                "dealBadge": null,
-                "newItemBadge": null
-            },
-            "stockStatus": "LOW",
-            "articleNumber": "21433366",
-            "uom": "EA",
-            "taxes": null,
-            "fees": null,
-            "sellerId": "7411",
-            "sellerName": "nofrills",
-            "isVariant": false,
-            "offerType": "OG",
-            "hasMultipleOffers": false,
-            "aisle": {
-                "name": "Bakery"
-            },
-            "sponsored": false
-        },
-        {
-            "code": "21509877_EA",
-            "name": "100% Whole Wheat Bread",
-            "description": "<p>100% Whole Wheat Bread will be a daily favourite in your house. Sliced and ready to eat, this vegetarian loaf of bread is perfect for your favourite sandwiches or toasted with your favourite spread in the morning.</pl>",
-            "brand": "No Name",
-            "link": "/100-whole-wheat-bread/p/21509877_EA",
-            "imageAssets": [
-                {
-                    "imageUrl": null,
-                    "smallUrl": "https://assets.shop.loblaws.ca/products/21509877/b1/en/front/21509877_front_a01_@2.png",
-                    "mediumUrl": "https://assets.shop.loblaws.ca/products/21509877/b1/en/front/21509877_front_a01_@2.png",
-                    "largeUrl": "https://assets.shop.loblaws.ca/products/21509877/b1/en/front/21509877_front_a01_@2.png",
-                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/21509877/b1/en/front/21509877_front_a01_@2.png",
-                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/21509877/b1/en/front/21509877_front_a01_@2.png",
-                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/21509877/b1/en/front/21509877_front_a01_@2.png"
-                }
-            ],
-            "packageSize": "675 g",
-            "shoppable": true,
-            "prices": {
-                "price": {
-                    "value": 1.99,
-                    "unit": "ea",
-                    "quantity": 1,
-                    "reasonCode": 4,
-                    "type": "REGULAR"
-                },
-                "wasPrice": null,
-                "comparisonPrices": [
-                    {
-                        "value": 0.29,
-                        "unit": "g",
-                        "quantity": 100,
-                        "reasonCode": null,
-                        "type": null
-                    }
-                ]
-            },
-            "pricingUnits": {
-                "type": "SOLD_BY_EACH",
-                "unit": "ea",
-                "interval": 1.0,
-                "minOrderQuantity": 1.0,
-                "maxOrderQuantity": 25.0,
-                "weighted": false
-            },
-            "badges": {
-                "textBadge": null,
-                "loyaltyBadge": null,
-                "dealBadge": null,
-                "newItemBadge": null
-            },
-            "stockStatus": "OK",
-            "articleNumber": "21509877",
             "uom": "EA",
             "taxes": null,
             "fees": null,
@@ -1506,7 +1524,13 @@
             },
             "badges": {
                 "textBadge": null,
-                "loyaltyBadge": null,
+                "loyaltyBadge": {
+                    "type": "LOYALTY",
+                    "text": null,
+                    "expiryDate": null,
+                    "promoType": null,
+                    "name": "LOYALTY"
+                },
                 "dealBadge": null,
                 "newItemBadge": null
             },
@@ -1574,87 +1598,8 @@
                 "dealBadge": null,
                 "newItemBadge": null
             },
-            "stockStatus": "LOW",
-            "articleNumber": "21509159",
-            "uom": "EA",
-            "taxes": null,
-            "fees": null,
-            "sellerId": "7411",
-            "sellerName": "nofrills",
-            "isVariant": false,
-            "offerType": "OG",
-            "hasMultipleOffers": false,
-            "aisle": {
-                "name": "Bakery"
-            },
-            "sponsored": false
-        },
-        {
-            "code": "20147520_EA",
-            "name": "Light Rye Bread",
-            "description": "Sliced loaf made with wheat flour, sourdough and rye flour.",
-            "brand": "Rudolphs",
-            "link": "/light-rye-bread/p/20147520_EA",
-            "imageAssets": [
-                {
-                    "imageUrl": null,
-                    "smallUrl": "https://assets.shop.loblaws.ca/products/20147520/b1/en/front/20147520_front_a01_@2.png",
-                    "mediumUrl": "https://assets.shop.loblaws.ca/products/20147520/b1/en/front/20147520_front_a01_@2.png",
-                    "largeUrl": "https://assets.shop.loblaws.ca/products/20147520/b1/en/front/20147520_front_a01_@2.png",
-                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/20147520/b1/en/front/20147520_front_a01_@2.png",
-                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/20147520/b1/en/front/20147520_front_a01_@2.png",
-                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/20147520/b1/en/front/20147520_front_a01_@2.png"
-                }
-            ],
-            "packageSize": "680 g",
-            "shoppable": true,
-            "prices": {
-                "price": {
-                    "value": 2.99,
-                    "unit": "ea",
-                    "quantity": 1,
-                    "reasonCode": 3,
-                    "type": "SPECIAL"
-                },
-                "wasPrice": {
-                    "value": 3.79,
-                    "unit": "ea",
-                    "quantity": 1,
-                    "reasonCode": null,
-                    "type": null
-                },
-                "comparisonPrices": [
-                    {
-                        "value": 0.44,
-                        "unit": "g",
-                        "quantity": 100,
-                        "reasonCode": null,
-                        "type": null
-                    }
-                ]
-            },
-            "pricingUnits": {
-                "type": "SOLD_BY_EACH",
-                "unit": "ea",
-                "interval": 1.0,
-                "minOrderQuantity": 1.0,
-                "maxOrderQuantity": 25.0,
-                "weighted": false
-            },
-            "badges": {
-                "textBadge": null,
-                "loyaltyBadge": null,
-                "dealBadge": {
-                    "type": "SALE",
-                    "text": "SAVE $0.80",
-                    "expiryDate": "2023-07-12T00:00:00Z",
-                    "promoType": null,
-                    "name": "SALE"
-                },
-                "newItemBadge": null
-            },
             "stockStatus": "OK",
-            "articleNumber": "20147520",
+            "articleNumber": "21509159",
             "uom": "EA",
             "taxes": null,
             "fees": null,
@@ -1809,6 +1754,73 @@
             "sponsored": false
         },
         {
+            "code": "21428983_EA",
+            "name": "Quinoa Flax Bread",
+            "description": null,
+            "brand": "Country Harvest",
+            "link": "/quinoa-flax-bread/p/21428983_EA",
+            "imageAssets": [
+                {
+                    "imageUrl": null,
+                    "smallUrl": "https://assets.shop.loblaws.ca/products/21428983/b1/en/front/21428983_front_a01_@2.png",
+                    "mediumUrl": "https://assets.shop.loblaws.ca/products/21428983/b1/en/front/21428983_front_a01_@2.png",
+                    "largeUrl": "https://assets.shop.loblaws.ca/products/21428983/b1/en/front/21428983_front_a01_@2.png",
+                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/21428983/b1/en/front/21428983_front_a01_@2.png",
+                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/21428983/b1/en/front/21428983_front_a01_@2.png",
+                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/21428983/b1/en/front/21428983_front_a01_@2.png"
+                }
+            ],
+            "packageSize": "600 g",
+            "shoppable": true,
+            "prices": {
+                "price": {
+                    "value": 3.99,
+                    "unit": "ea",
+                    "quantity": 1,
+                    "reasonCode": 4,
+                    "type": "REGULAR"
+                },
+                "wasPrice": null,
+                "comparisonPrices": [
+                    {
+                        "value": 0.67,
+                        "unit": "g",
+                        "quantity": 100,
+                        "reasonCode": null,
+                        "type": null
+                    }
+                ]
+            },
+            "pricingUnits": {
+                "type": "SOLD_BY_EACH",
+                "unit": "ea",
+                "interval": 1.0,
+                "minOrderQuantity": 1.0,
+                "maxOrderQuantity": 25.0,
+                "weighted": false
+            },
+            "badges": {
+                "textBadge": null,
+                "loyaltyBadge": null,
+                "dealBadge": null,
+                "newItemBadge": null
+            },
+            "stockStatus": "OK",
+            "articleNumber": "21428983",
+            "uom": "EA",
+            "taxes": null,
+            "fees": null,
+            "sellerId": "7411",
+            "sellerName": "nofrills",
+            "isVariant": false,
+            "offerType": "OG",
+            "hasMultipleOffers": false,
+            "aisle": {
+                "name": "Bakery"
+            },
+            "sponsored": false
+        },
+        {
             "code": "21178631_EA",
             "name": "No Sugar Whole Wheat",
             "description": "Grab Life by the Grains\u2122.New look.25 g whole grains.3 g fibre.5 g protein.By portion of 40 g.100% whole grains.It takes the best elements to make every day successful. With a nutritious and great-tasting blend of whole grains and high quality ingredients, you'll have what it takes to conquer anything. You've got the bread, now it's time to show the day what you're made of.",
@@ -1943,27 +1955,27 @@
             "sponsored": false
         },
         {
-            "code": "21430976_EA",
-            "name": "Cranberry & Oats Loaf",
-            "description": null,
-            "brand": "Country Harvest",
-            "link": "/cranberry-oats-loaf/p/21430976_EA",
+            "code": "20147355_EA",
+            "name": "100% Whole Wheat Bread",
+            "description": "Dempster\u2019s\u00ae 100% Whole Wheat Sandwich Bread is baked in Canada with our simplest ingredients and no artificial flavours or colours. Soft and nutritious, this hearty bread is a tasty choice for your favourite sandwiches.",
+            "brand": "Dempster",
+            "link": "/100-whole-wheat-bread/p/20147355_EA",
             "imageAssets": [
                 {
                     "imageUrl": null,
-                    "smallUrl": "https://assets.shop.loblaws.ca/products/21430976/b1/en/front/21430976_front_a01_@2.png",
-                    "mediumUrl": "https://assets.shop.loblaws.ca/products/21430976/b1/en/front/21430976_front_a01_@2.png",
-                    "largeUrl": "https://assets.shop.loblaws.ca/products/21430976/b1/en/front/21430976_front_a01_@2.png",
-                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/21430976/b1/en/front/21430976_front_a01_@2.png",
-                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/21430976/b1/en/front/21430976_front_a01_@2.png",
-                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/21430976/b1/en/front/21430976_front_a01_@2.png"
+                    "smallUrl": "https://assets.shop.loblaws.ca/products/20147355/b1/en/front/20147355_front_a01_@2.png",
+                    "mediumUrl": "https://assets.shop.loblaws.ca/products/20147355/b1/en/front/20147355_front_a01_@2.png",
+                    "largeUrl": "https://assets.shop.loblaws.ca/products/20147355/b1/en/front/20147355_front_a01_@2.png",
+                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/20147355/b1/en/front/20147355_front_a01_@2.png",
+                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/20147355/b1/en/front/20147355_front_a01_@2.png",
+                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/20147355/b1/en/front/20147355_front_a01_@2.png"
                 }
             ],
-            "packageSize": "600 g",
+            "packageSize": "675 g",
             "shoppable": true,
             "prices": {
                 "price": {
-                    "value": 3.99,
+                    "value": 3.69,
                     "unit": "ea",
                     "quantity": 1,
                     "reasonCode": 4,
@@ -1972,7 +1984,7 @@
                 "wasPrice": null,
                 "comparisonPrices": [
                     {
-                        "value": 0.66,
+                        "value": 0.55,
                         "unit": "g",
                         "quantity": 100,
                         "reasonCode": null,
@@ -1995,74 +2007,7 @@
                 "newItemBadge": null
             },
             "stockStatus": "OK",
-            "articleNumber": "21430976",
-            "uom": "EA",
-            "taxes": null,
-            "fees": null,
-            "sellerId": "7411",
-            "sellerName": "nofrills",
-            "isVariant": false,
-            "offerType": "OG",
-            "hasMultipleOffers": false,
-            "aisle": {
-                "name": "Bakery"
-            },
-            "sponsored": false
-        },
-        {
-            "code": "21428983_EA",
-            "name": "Quinoa Flax Bread",
-            "description": null,
-            "brand": "Country Harvest",
-            "link": "/quinoa-flax-bread/p/21428983_EA",
-            "imageAssets": [
-                {
-                    "imageUrl": null,
-                    "smallUrl": "https://assets.shop.loblaws.ca/products/21428983/b1/en/front/21428983_front_a01_@2.png",
-                    "mediumUrl": "https://assets.shop.loblaws.ca/products/21428983/b1/en/front/21428983_front_a01_@2.png",
-                    "largeUrl": "https://assets.shop.loblaws.ca/products/21428983/b1/en/front/21428983_front_a01_@2.png",
-                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/21428983/b1/en/front/21428983_front_a01_@2.png",
-                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/21428983/b1/en/front/21428983_front_a01_@2.png",
-                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/21428983/b1/en/front/21428983_front_a01_@2.png"
-                }
-            ],
-            "packageSize": "600 g",
-            "shoppable": true,
-            "prices": {
-                "price": {
-                    "value": 3.99,
-                    "unit": "ea",
-                    "quantity": 1,
-                    "reasonCode": 4,
-                    "type": "REGULAR"
-                },
-                "wasPrice": null,
-                "comparisonPrices": [
-                    {
-                        "value": 0.67,
-                        "unit": "g",
-                        "quantity": 100,
-                        "reasonCode": null,
-                        "type": null
-                    }
-                ]
-            },
-            "pricingUnits": {
-                "type": "SOLD_BY_EACH",
-                "unit": "ea",
-                "interval": 1.0,
-                "minOrderQuantity": 1.0,
-                "maxOrderQuantity": 25.0,
-                "weighted": false
-            },
-            "badges": {
-                "textBadge": null,
-                "loyaltyBadge": null,
-                "dealBadge": null,
-                "newItemBadge": null
-            },
-            "stockStatus": "OK",
-            "articleNumber": "21428983",
+            "articleNumber": "20147355",
             "uom": "EA",
             "taxes": null,
             "fees": null,
@@ -2345,27 +2290,27 @@
             "sponsored": false
         },
         {
-            "code": "20187958_EA",
-            "name": "White Bread",
-            "description": "<p>Get\r\n  the classic taste your family knows and loves with Dempster's\u00ae White Bread.\r\n  Made using our simplest ingredients, this soft bread is a popular choice for\r\n  sandwiches, toast and so much more. Each loaf is made in Canada with Canadian\r\n  wheat flour and contains no artificial flavours or colours. Keep a loaf on\r\n  hand for breakfast, lunch or dinner any day of the week.</p>",
-            "brand": "Dempster",
-            "link": "/white-bread/p/20187958_EA",
+            "code": "20120773_EA",
+            "name": "Pumpernickel Bread",
+            "description": "Delicatessen rye bread made with natural spring water.",
+            "brand": "Dimpflmeier",
+            "link": "/pumpernickel-bread/p/20120773_EA",
             "imageAssets": [
                 {
                     "imageUrl": null,
-                    "smallUrl": "https://assets.shop.loblaws.ca/products/20187958/b1/en/front/20187958_front_a01_@2.png",
-                    "mediumUrl": "https://assets.shop.loblaws.ca/products/20187958/b1/en/front/20187958_front_a01_@2.png",
-                    "largeUrl": "https://assets.shop.loblaws.ca/products/20187958/b1/en/front/20187958_front_a01_@2.png",
-                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/20187958/b1/en/front/20187958_front_a01_@2.png",
-                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/20187958/b1/en/front/20187958_front_a01_@2.png",
-                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/20187958/b1/en/front/20187958_front_a01_@2.png"
+                    "smallUrl": "https://assets.shop.loblaws.ca/products/20120773/b1/en/front/20120773_front_a01_@2.png",
+                    "mediumUrl": "https://assets.shop.loblaws.ca/products/20120773/b1/en/front/20120773_front_a01_@2.png",
+                    "largeUrl": "https://assets.shop.loblaws.ca/products/20120773/b1/en/front/20120773_front_a01_@2.png",
+                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/20120773/b1/en/front/20120773_front_a01_@2.png",
+                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/20120773/b1/en/front/20120773_front_a01_@2.png",
+                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/20120773/b1/en/front/20120773_front_a01_@2.png"
                 }
             ],
-            "packageSize": "675 g",
+            "packageSize": "454 g",
             "shoppable": true,
             "prices": {
                 "price": {
-                    "value": 3.69,
+                    "value": 3.89,
                     "unit": "ea",
                     "quantity": 1,
                     "reasonCode": 4,
@@ -2374,7 +2319,7 @@
                 "wasPrice": null,
                 "comparisonPrices": [
                     {
-                        "value": 0.55,
+                        "value": 0.86,
                         "unit": "g",
                         "quantity": 100,
                         "reasonCode": null,
@@ -2397,7 +2342,7 @@
                 "newItemBadge": null
             },
             "stockStatus": "OK",
-            "articleNumber": "20187958",
+            "articleNumber": "20120773",
             "uom": "EA",
             "taxes": null,
             "fees": null,
@@ -2479,6 +2424,73 @@
             "sponsored": false
         },
         {
+            "code": "20187958_EA",
+            "name": "White Bread",
+            "description": "<p>Get\r\n  the classic taste your family knows and loves with Dempster's\u00ae White Bread.\r\n  Made using our simplest ingredients, this soft bread is a popular choice for\r\n  sandwiches, toast and so much more. Each loaf is made in Canada with Canadian\r\n  wheat flour and contains no artificial flavours or colours. Keep a loaf on\r\n  hand for breakfast, lunch or dinner any day of the week.</p>",
+            "brand": "Dempster",
+            "link": "/white-bread/p/20187958_EA",
+            "imageAssets": [
+                {
+                    "imageUrl": null,
+                    "smallUrl": "https://assets.shop.loblaws.ca/products/20187958/b1/en/front/20187958_front_a01_@2.png",
+                    "mediumUrl": "https://assets.shop.loblaws.ca/products/20187958/b1/en/front/20187958_front_a01_@2.png",
+                    "largeUrl": "https://assets.shop.loblaws.ca/products/20187958/b1/en/front/20187958_front_a01_@2.png",
+                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/20187958/b1/en/front/20187958_front_a01_@2.png",
+                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/20187958/b1/en/front/20187958_front_a01_@2.png",
+                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/20187958/b1/en/front/20187958_front_a01_@2.png"
+                }
+            ],
+            "packageSize": "675 g",
+            "shoppable": true,
+            "prices": {
+                "price": {
+                    "value": 3.69,
+                    "unit": "ea",
+                    "quantity": 1,
+                    "reasonCode": 4,
+                    "type": "REGULAR"
+                },
+                "wasPrice": null,
+                "comparisonPrices": [
+                    {
+                        "value": 0.55,
+                        "unit": "g",
+                        "quantity": 100,
+                        "reasonCode": null,
+                        "type": null
+                    }
+                ]
+            },
+            "pricingUnits": {
+                "type": "SOLD_BY_EACH",
+                "unit": "ea",
+                "interval": 1.0,
+                "minOrderQuantity": 1.0,
+                "maxOrderQuantity": 25.0,
+                "weighted": false
+            },
+            "badges": {
+                "textBadge": null,
+                "loyaltyBadge": null,
+                "dealBadge": null,
+                "newItemBadge": null
+            },
+            "stockStatus": "OK",
+            "articleNumber": "20187958",
+            "uom": "EA",
+            "taxes": null,
+            "fees": null,
+            "sellerId": "7411",
+            "sellerName": "nofrills",
+            "isVariant": false,
+            "offerType": "OG",
+            "hasMultipleOffers": false,
+            "aisle": {
+                "name": "Bakery"
+            },
+            "sponsored": false
+        },
+        {
             "code": "20648974_EA",
             "name": "Chia and Supergrains Bread",
             "description": "Wholesome chia and supergrains make this naturally fermented, high-fibre bread a welcome, hearty addition to the Stonemill\u00ae Bakehouse family.",
@@ -2532,73 +2544,6 @@
             },
             "stockStatus": "OK",
             "articleNumber": "20648974",
-            "uom": "EA",
-            "taxes": null,
-            "fees": null,
-            "sellerId": "7411",
-            "sellerName": "nofrills",
-            "isVariant": false,
-            "offerType": "OG",
-            "hasMultipleOffers": false,
-            "aisle": {
-                "name": "Bakery"
-            },
-            "sponsored": false
-        },
-        {
-            "code": "21489971_EA",
-            "name": "22 Grains & Seeds Bread",
-            "description": "Oroweat Organic\u00ae 22 Grains & Seeds Bread is a fresh and tasty bread that's sustainably baked*. Each fresh and delicious loaf is made with high-quality, certified organic ingredients. Bursting with flavour, the seed bread is high in fibre, a source of omega-3 polyunsaturated fat and free from artificial colours, flavours and preservatives. And as a member of 1% for the Planet, we always donate 1% of our revenues to environmental causes. * We match 100% of the electricity usage that goes into baking Oroweat\u00ae bread with electricity produced from renewable sources.",
-            "brand": "Oroweat",
-            "link": "/22-grains-seeds-bread/p/21489971_EA",
-            "imageAssets": [
-                {
-                    "imageUrl": null,
-                    "smallUrl": "https://assets.shop.loblaws.ca/products/21489971/b1/en/front/21489971_front_a01_@2.png",
-                    "mediumUrl": "https://assets.shop.loblaws.ca/products/21489971/b1/en/front/21489971_front_a01_@2.png",
-                    "largeUrl": "https://assets.shop.loblaws.ca/products/21489971/b1/en/front/21489971_front_a01_@2.png",
-                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/21489971/b1/en/front/21489971_front_a01_@2.png",
-                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/21489971/b1/en/front/21489971_front_a01_@2.png",
-                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/21489971/b1/en/front/21489971_front_a01_@2.png"
-                }
-            ],
-            "packageSize": "680 g",
-            "shoppable": true,
-            "prices": {
-                "price": {
-                    "value": 5.49,
-                    "unit": "ea",
-                    "quantity": 1,
-                    "reasonCode": 4,
-                    "type": "REGULAR"
-                },
-                "wasPrice": null,
-                "comparisonPrices": [
-                    {
-                        "value": 0.81,
-                        "unit": "g",
-                        "quantity": 100,
-                        "reasonCode": null,
-                        "type": null
-                    }
-                ]
-            },
-            "pricingUnits": {
-                "type": "SOLD_BY_EACH",
-                "unit": "ea",
-                "interval": 1.0,
-                "minOrderQuantity": 1.0,
-                "maxOrderQuantity": 25.0,
-                "weighted": false
-            },
-            "badges": {
-                "textBadge": null,
-                "loyaltyBadge": null,
-                "dealBadge": null,
-                "newItemBadge": null
-            },
-            "stockStatus": "OK",
-            "articleNumber": "21489971",
             "uom": "EA",
             "taxes": null,
             "fees": null,
@@ -2747,6 +2692,79 @@
             "sponsored": false
         },
         {
+            "code": "20626958_EA",
+            "name": "Thick Sliced Sesame Bread",
+            "description": "We Bake Big Bread. Unapologetically Big Bread. Because We Believe You Should Live To Eat, Not Eat To Live. So Go On - Grab A Soft Slice Of D'Italiano Thick Sliced Bread, Take A Huge Delicious Bite And Live Large!",
+            "brand": "DItaliano",
+            "link": "/thick-sliced-sesame-bread/p/20626958_EA",
+            "imageAssets": [
+                {
+                    "imageUrl": null,
+                    "smallUrl": "https://assets.shop.loblaws.ca/products/20626958/b1/en/front/20626958_front_a01_@2.png",
+                    "mediumUrl": "https://assets.shop.loblaws.ca/products/20626958/b1/en/front/20626958_front_a01_@2.png",
+                    "largeUrl": "https://assets.shop.loblaws.ca/products/20626958/b1/en/front/20626958_front_a01_@2.png",
+                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/20626958/b1/en/front/20626958_front_a01_@2.png",
+                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/20626958/b1/en/front/20626958_front_a01_@2.png",
+                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/20626958/b1/en/front/20626958_front_a01_@2.png"
+                }
+            ],
+            "packageSize": "675 g",
+            "shoppable": true,
+            "prices": {
+                "price": {
+                    "value": 3.48,
+                    "unit": "ea",
+                    "quantity": 1,
+                    "reasonCode": 1,
+                    "type": "SPECIAL"
+                },
+                "wasPrice": null,
+                "comparisonPrices": [
+                    {
+                        "value": 0.52,
+                        "unit": "g",
+                        "quantity": 100,
+                        "reasonCode": null,
+                        "type": null
+                    }
+                ]
+            },
+            "pricingUnits": {
+                "type": "SOLD_BY_EACH",
+                "unit": "ea",
+                "interval": 1.0,
+                "minOrderQuantity": 1.0,
+                "maxOrderQuantity": 25.0,
+                "weighted": false
+            },
+            "badges": {
+                "textBadge": null,
+                "loyaltyBadge": null,
+                "dealBadge": {
+                    "type": "MULTI",
+                    "text": "$2.94 MIN 2",
+                    "expiryDate": "2023-07-05T00:00:00Z",
+                    "promoType": null,
+                    "name": "MULTI"
+                },
+                "newItemBadge": null
+            },
+            "stockStatus": "OK",
+            "articleNumber": "20626958",
+            "uom": "EA",
+            "taxes": null,
+            "fees": null,
+            "sellerId": "7411",
+            "sellerName": "nofrills",
+            "isVariant": false,
+            "offerType": "OG",
+            "hasMultipleOffers": false,
+            "aisle": {
+                "name": "Bakery"
+            },
+            "sponsored": false
+        },
+        {
             "code": "20165873_EA",
             "name": "Cinnamon Swirl Raisin Bread",
             "description": "Sun-Maid\u00ae Cinnamon Swirl Raisin Bread is packed with juicy sun-dried raisins and cinnamon for a great taste families love. Toast it with butter or upgrade your French toast for breakfast that\u2019s never boring.",
@@ -2814,36 +2832,36 @@
             "sponsored": false
         },
         {
-            "code": "20626958_EA",
-            "name": "Thick Sliced Sesame Bread",
-            "description": "We Bake Big Bread. Unapologetically Big Bread. Because We Believe You Should Live To Eat, Not Eat To Live. So Go On - Grab A Soft Slice Of D'Italiano Thick Sliced Bread, Take A Huge Delicious Bite And Live Large!",
-            "brand": "DItaliano",
-            "link": "/thick-sliced-sesame-bread/p/20626958_EA",
+            "code": "20082929_EA",
+            "name": "Bread Prebiotic Multi-Grain",
+            "description": "Multigrain bread with prebiotic fibre, made with natural spring water.",
+            "brand": "Dimpflmeier",
+            "link": "/bread-prebiotic-multi-grain/p/20082929_EA",
             "imageAssets": [
                 {
                     "imageUrl": null,
-                    "smallUrl": "https://assets.shop.loblaws.ca/products/20626958/b1/en/front/20626958_front_a01_@2.png",
-                    "mediumUrl": "https://assets.shop.loblaws.ca/products/20626958/b1/en/front/20626958_front_a01_@2.png",
-                    "largeUrl": "https://assets.shop.loblaws.ca/products/20626958/b1/en/front/20626958_front_a01_@2.png",
-                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/20626958/b1/en/front/20626958_front_a01_@2.png",
-                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/20626958/b1/en/front/20626958_front_a01_@2.png",
-                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/20626958/b1/en/front/20626958_front_a01_@2.png"
+                    "smallUrl": "https://assets.shop.loblaws.ca/products/20082929/b1/en/front/20082929_front_a01_@2.png",
+                    "mediumUrl": "https://assets.shop.loblaws.ca/products/20082929/b1/en/front/20082929_front_a01_@2.png",
+                    "largeUrl": "https://assets.shop.loblaws.ca/products/20082929/b1/en/front/20082929_front_a01_@2.png",
+                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/20082929/b1/en/front/20082929_front_a01_@2.png",
+                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/20082929/b1/en/front/20082929_front_a01_@2.png",
+                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/20082929/b1/en/front/20082929_front_a01_@2.png"
                 }
             ],
-            "packageSize": "675 g",
+            "packageSize": "454 g",
             "shoppable": true,
             "prices": {
                 "price": {
-                    "value": 3.48,
+                    "value": 3.49,
                     "unit": "ea",
                     "quantity": 1,
-                    "reasonCode": 1,
-                    "type": "SPECIAL"
+                    "reasonCode": 4,
+                    "type": "REGULAR"
                 },
                 "wasPrice": null,
                 "comparisonPrices": [
                     {
-                        "value": 0.52,
+                        "value": 0.77,
                         "unit": "g",
                         "quantity": 100,
                         "reasonCode": null,
@@ -2862,17 +2880,145 @@
             "badges": {
                 "textBadge": null,
                 "loyaltyBadge": null,
-                "dealBadge": {
-                    "type": "MULTI",
-                    "text": "$2.94 MIN 2",
-                    "expiryDate": "2023-07-05T00:00:00Z",
-                    "promoType": null,
-                    "name": "MULTI"
-                },
+                "dealBadge": null,
                 "newItemBadge": null
             },
             "stockStatus": "OK",
-            "articleNumber": "20626958",
+            "articleNumber": "20082929",
+            "uom": "EA",
+            "taxes": null,
+            "fees": null,
+            "sellerId": "7411",
+            "sellerName": "nofrills",
+            "isVariant": false,
+            "offerType": "OG",
+            "hasMultipleOffers": false,
+            "aisle": {
+                "name": "Bakery"
+            },
+            "sponsored": false
+        },
+        {
+            "code": "20013965_EA",
+            "name": "Rye Bread With Whole Grain",
+            "description": "Rye bread with whole grain made without baker\u2019s yeast or wheat flour.",
+            "brand": "Dimpflmeier",
+            "link": "/rye-bread-with-whole-grain/p/20013965_EA",
+            "imageAssets": [
+                {
+                    "imageUrl": null,
+                    "smallUrl": "https://assets.shop.loblaws.ca/products/20013965/b1/en/front/20013965_front_a01_@2.png",
+                    "mediumUrl": "https://assets.shop.loblaws.ca/products/20013965/b1/en/front/20013965_front_a01_@2.png",
+                    "largeUrl": "https://assets.shop.loblaws.ca/products/20013965/b1/en/front/20013965_front_a01_@2.png",
+                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/20013965/b1/en/front/20013965_front_a01_@2.png",
+                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/20013965/b1/en/front/20013965_front_a01_@2.png",
+                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/20013965/b1/en/front/20013965_front_a01_@2.png"
+                }
+            ],
+            "packageSize": "454 g",
+            "shoppable": true,
+            "prices": {
+                "price": {
+                    "value": 5.19,
+                    "unit": "ea",
+                    "quantity": 1,
+                    "reasonCode": 4,
+                    "type": "REGULAR"
+                },
+                "wasPrice": null,
+                "comparisonPrices": [
+                    {
+                        "value": 1.14,
+                        "unit": "g",
+                        "quantity": 100,
+                        "reasonCode": null,
+                        "type": null
+                    }
+                ]
+            },
+            "pricingUnits": {
+                "type": "SOLD_BY_EACH",
+                "unit": "ea",
+                "interval": 1.0,
+                "minOrderQuantity": 1.0,
+                "maxOrderQuantity": 25.0,
+                "weighted": false
+            },
+            "badges": {
+                "textBadge": null,
+                "loyaltyBadge": null,
+                "dealBadge": null,
+                "newItemBadge": null
+            },
+            "stockStatus": "OK",
+            "articleNumber": "20013965",
+            "uom": "EA",
+            "taxes": null,
+            "fees": null,
+            "sellerId": "7411",
+            "sellerName": "nofrills",
+            "isVariant": false,
+            "offerType": "OG",
+            "hasMultipleOffers": false,
+            "aisle": {
+                "name": "Bakery"
+            },
+            "sponsored": false
+        },
+        {
+            "code": "20309503_EA",
+            "name": "Rye Bread With Sunflower Seeds",
+            "description": "Rye bread with sunflower seeds made without baker\u2019s yeast or wheat flour.",
+            "brand": "Dimpflmeier",
+            "link": "/rye-bread-with-sunflower-seeds/p/20309503_EA",
+            "imageAssets": [
+                {
+                    "imageUrl": null,
+                    "smallUrl": "https://assets.shop.loblaws.ca/products/20309503/b1/en/front/20309503_front_a01_@2.png",
+                    "mediumUrl": "https://assets.shop.loblaws.ca/products/20309503/b1/en/front/20309503_front_a01_@2.png",
+                    "largeUrl": "https://assets.shop.loblaws.ca/products/20309503/b1/en/front/20309503_front_a01_@2.png",
+                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/20309503/b1/en/front/20309503_front_a01_@2.png",
+                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/20309503/b1/en/front/20309503_front_a01_@2.png",
+                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/20309503/b1/en/front/20309503_front_a01_@2.png"
+                }
+            ],
+            "packageSize": "454 g",
+            "shoppable": true,
+            "prices": {
+                "price": {
+                    "value": 4.99,
+                    "unit": "ea",
+                    "quantity": 1,
+                    "reasonCode": 4,
+                    "type": "REGULAR"
+                },
+                "wasPrice": null,
+                "comparisonPrices": [
+                    {
+                        "value": 1.1,
+                        "unit": "g",
+                        "quantity": 100,
+                        "reasonCode": null,
+                        "type": null
+                    }
+                ]
+            },
+            "pricingUnits": {
+                "type": "SOLD_BY_EACH",
+                "unit": "ea",
+                "interval": 1.0,
+                "minOrderQuantity": 1.0,
+                "maxOrderQuantity": 25.0,
+                "weighted": false
+            },
+            "badges": {
+                "textBadge": null,
+                "loyaltyBadge": null,
+                "dealBadge": null,
+                "newItemBadge": null
+            },
+            "stockStatus": "OK",
+            "articleNumber": "20309503",
             "uom": "EA",
             "taxes": null,
             "fees": null,
@@ -3021,221 +3167,20 @@
             "sponsored": false
         },
         {
-            "code": "20082929_EA",
-            "name": "Bread Prebiotic Multi-Grain",
-            "description": "Multigrain bread with prebiotic fibre, made with natural spring water.",
+            "code": "20305160_EA",
+            "name": "Spelt Bread with Wild Rice",
+            "description": "Bread made with whole spelt flour, natural spring water, wild rice, and sour dough.",
             "brand": "Dimpflmeier",
-            "link": "/bread-prebiotic-multi-grain/p/20082929_EA",
+            "link": "/spelt-bread-with-wild-rice/p/20305160_EA",
             "imageAssets": [
                 {
                     "imageUrl": null,
-                    "smallUrl": "https://assets.shop.loblaws.ca/products/20082929/b1/en/front/20082929_front_a01_@2.png",
-                    "mediumUrl": "https://assets.shop.loblaws.ca/products/20082929/b1/en/front/20082929_front_a01_@2.png",
-                    "largeUrl": "https://assets.shop.loblaws.ca/products/20082929/b1/en/front/20082929_front_a01_@2.png",
-                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/20082929/b1/en/front/20082929_front_a01_@2.png",
-                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/20082929/b1/en/front/20082929_front_a01_@2.png",
-                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/20082929/b1/en/front/20082929_front_a01_@2.png"
-                }
-            ],
-            "packageSize": "454 g",
-            "shoppable": true,
-            "prices": {
-                "price": {
-                    "value": 3.49,
-                    "unit": "ea",
-                    "quantity": 1,
-                    "reasonCode": 4,
-                    "type": "REGULAR"
-                },
-                "wasPrice": null,
-                "comparisonPrices": [
-                    {
-                        "value": 0.77,
-                        "unit": "g",
-                        "quantity": 100,
-                        "reasonCode": null,
-                        "type": null
-                    }
-                ]
-            },
-            "pricingUnits": {
-                "type": "SOLD_BY_EACH",
-                "unit": "ea",
-                "interval": 1.0,
-                "minOrderQuantity": 1.0,
-                "maxOrderQuantity": 25.0,
-                "weighted": false
-            },
-            "badges": {
-                "textBadge": null,
-                "loyaltyBadge": null,
-                "dealBadge": null,
-                "newItemBadge": null
-            },
-            "stockStatus": "OK",
-            "articleNumber": "20082929",
-            "uom": "EA",
-            "taxes": null,
-            "fees": null,
-            "sellerId": "7411",
-            "sellerName": "nofrills",
-            "isVariant": false,
-            "offerType": "OG",
-            "hasMultipleOffers": false,
-            "aisle": {
-                "name": "Bakery"
-            },
-            "sponsored": false
-        },
-        {
-            "code": "20147355_EA",
-            "name": "100% Whole Wheat Bread",
-            "description": "Dempster\u2019s\u00ae 100% Whole Wheat Sandwich Bread is baked in Canada with our simplest ingredients and no artificial flavours or colours. Soft and nutritious, this hearty bread is a tasty choice for your favourite sandwiches.",
-            "brand": "Dempster",
-            "link": "/100-whole-wheat-bread/p/20147355_EA",
-            "imageAssets": [
-                {
-                    "imageUrl": null,
-                    "smallUrl": "https://assets.shop.loblaws.ca/products/20147355/b1/en/front/20147355_front_a01_@2.png",
-                    "mediumUrl": "https://assets.shop.loblaws.ca/products/20147355/b1/en/front/20147355_front_a01_@2.png",
-                    "largeUrl": "https://assets.shop.loblaws.ca/products/20147355/b1/en/front/20147355_front_a01_@2.png",
-                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/20147355/b1/en/front/20147355_front_a01_@2.png",
-                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/20147355/b1/en/front/20147355_front_a01_@2.png",
-                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/20147355/b1/en/front/20147355_front_a01_@2.png"
-                }
-            ],
-            "packageSize": "675 g",
-            "shoppable": true,
-            "prices": {
-                "price": {
-                    "value": 3.69,
-                    "unit": "ea",
-                    "quantity": 1,
-                    "reasonCode": 4,
-                    "type": "REGULAR"
-                },
-                "wasPrice": null,
-                "comparisonPrices": [
-                    {
-                        "value": 0.55,
-                        "unit": "g",
-                        "quantity": 100,
-                        "reasonCode": null,
-                        "type": null
-                    }
-                ]
-            },
-            "pricingUnits": {
-                "type": "SOLD_BY_EACH",
-                "unit": "ea",
-                "interval": 1.0,
-                "minOrderQuantity": 1.0,
-                "maxOrderQuantity": 25.0,
-                "weighted": false
-            },
-            "badges": {
-                "textBadge": null,
-                "loyaltyBadge": null,
-                "dealBadge": null,
-                "newItemBadge": null
-            },
-            "stockStatus": "OK",
-            "articleNumber": "20147355",
-            "uom": "EA",
-            "taxes": null,
-            "fees": null,
-            "sellerId": "7411",
-            "sellerName": "nofrills",
-            "isVariant": false,
-            "offerType": "OG",
-            "hasMultipleOffers": false,
-            "aisle": {
-                "name": "Bakery"
-            },
-            "sponsored": false
-        },
-        {
-            "code": "20013965_EA",
-            "name": "Rye Bread With Whole Grain",
-            "description": "Rye bread with whole grain made without baker\u2019s yeast or wheat flour.",
-            "brand": "Dimpflmeier",
-            "link": "/rye-bread-with-whole-grain/p/20013965_EA",
-            "imageAssets": [
-                {
-                    "imageUrl": null,
-                    "smallUrl": "https://assets.shop.loblaws.ca/products/20013965/b1/en/front/20013965_front_a01_@2.png",
-                    "mediumUrl": "https://assets.shop.loblaws.ca/products/20013965/b1/en/front/20013965_front_a01_@2.png",
-                    "largeUrl": "https://assets.shop.loblaws.ca/products/20013965/b1/en/front/20013965_front_a01_@2.png",
-                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/20013965/b1/en/front/20013965_front_a01_@2.png",
-                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/20013965/b1/en/front/20013965_front_a01_@2.png",
-                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/20013965/b1/en/front/20013965_front_a01_@2.png"
-                }
-            ],
-            "packageSize": "454 g",
-            "shoppable": true,
-            "prices": {
-                "price": {
-                    "value": 5.19,
-                    "unit": "ea",
-                    "quantity": 1,
-                    "reasonCode": 4,
-                    "type": "REGULAR"
-                },
-                "wasPrice": null,
-                "comparisonPrices": [
-                    {
-                        "value": 1.14,
-                        "unit": "g",
-                        "quantity": 100,
-                        "reasonCode": null,
-                        "type": null
-                    }
-                ]
-            },
-            "pricingUnits": {
-                "type": "SOLD_BY_EACH",
-                "unit": "ea",
-                "interval": 1.0,
-                "minOrderQuantity": 1.0,
-                "maxOrderQuantity": 25.0,
-                "weighted": false
-            },
-            "badges": {
-                "textBadge": null,
-                "loyaltyBadge": null,
-                "dealBadge": null,
-                "newItemBadge": null
-            },
-            "stockStatus": "OK",
-            "articleNumber": "20013965",
-            "uom": "EA",
-            "taxes": null,
-            "fees": null,
-            "sellerId": "7411",
-            "sellerName": "nofrills",
-            "isVariant": false,
-            "offerType": "OG",
-            "hasMultipleOffers": false,
-            "aisle": {
-                "name": "Bakery"
-            },
-            "sponsored": false
-        },
-        {
-            "code": "20309503_EA",
-            "name": "Rye Bread With Sunflower Seeds",
-            "description": "Rye bread with sunflower seeds made without baker\u2019s yeast or wheat flour.",
-            "brand": "Dimpflmeier",
-            "link": "/rye-bread-with-sunflower-seeds/p/20309503_EA",
-            "imageAssets": [
-                {
-                    "imageUrl": null,
-                    "smallUrl": "https://assets.shop.loblaws.ca/products/20309503/b1/en/front/20309503_front_a01_@2.png",
-                    "mediumUrl": "https://assets.shop.loblaws.ca/products/20309503/b1/en/front/20309503_front_a01_@2.png",
-                    "largeUrl": "https://assets.shop.loblaws.ca/products/20309503/b1/en/front/20309503_front_a01_@2.png",
-                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/20309503/b1/en/front/20309503_front_a01_@2.png",
-                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/20309503/b1/en/front/20309503_front_a01_@2.png",
-                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/20309503/b1/en/front/20309503_front_a01_@2.png"
+                    "smallUrl": "https://assets.shop.loblaws.ca/products/20305160/b1/en/front/20305160_front_a01_@2.png",
+                    "mediumUrl": "https://assets.shop.loblaws.ca/products/20305160/b1/en/front/20305160_front_a01_@2.png",
+                    "largeUrl": "https://assets.shop.loblaws.ca/products/20305160/b1/en/front/20305160_front_a01_@2.png",
+                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/20305160/b1/en/front/20305160_front_a01_@2.png",
+                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/20305160/b1/en/front/20305160_front_a01_@2.png",
+                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/20305160/b1/en/front/20305160_front_a01_@2.png"
                 }
             ],
             "packageSize": "454 g",
@@ -3274,7 +3219,141 @@
                 "newItemBadge": null
             },
             "stockStatus": "OK",
-            "articleNumber": "20309503",
+            "articleNumber": "20305160",
+            "uom": "EA",
+            "taxes": null,
+            "fees": null,
+            "sellerId": "7411",
+            "sellerName": "nofrills",
+            "isVariant": false,
+            "offerType": "OG",
+            "hasMultipleOffers": false,
+            "aisle": {
+                "name": "Bakery"
+            },
+            "sponsored": false
+        },
+        {
+            "code": "20434411_EA",
+            "name": "Authentic Bread, Sourdough Rye Multigrain ",
+            "description": "An infusion of flax and sunflower seeds enhances the delicious texture and taste of this authentic Stonemill\u00ae Bakehouse Multigrain Sourdough bread.",
+            "brand": "Stonemill",
+            "link": "/authentic-bread-sourdough-rye-multigrain/p/20434411_EA",
+            "imageAssets": [
+                {
+                    "imageUrl": null,
+                    "smallUrl": "https://assets.shop.loblaws.ca/products/20434411/b1/en/front/20434411_front_a01_@2.png",
+                    "mediumUrl": "https://assets.shop.loblaws.ca/products/20434411/b1/en/front/20434411_front_a01_@2.png",
+                    "largeUrl": "https://assets.shop.loblaws.ca/products/20434411/b1/en/front/20434411_front_a01_@2.png",
+                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/20434411/b1/en/front/20434411_front_a01_@2.png",
+                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/20434411/b1/en/front/20434411_front_a01_@2.png",
+                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/20434411/b1/en/front/20434411_front_a01_@2.png"
+                }
+            ],
+            "packageSize": "550 g",
+            "shoppable": true,
+            "prices": {
+                "price": {
+                    "value": 4.69,
+                    "unit": "ea",
+                    "quantity": 1,
+                    "reasonCode": 4,
+                    "type": "REGULAR"
+                },
+                "wasPrice": null,
+                "comparisonPrices": [
+                    {
+                        "value": 0.85,
+                        "unit": "g",
+                        "quantity": 100,
+                        "reasonCode": null,
+                        "type": null
+                    }
+                ]
+            },
+            "pricingUnits": {
+                "type": "SOLD_BY_EACH",
+                "unit": "ea",
+                "interval": 1.0,
+                "minOrderQuantity": 1.0,
+                "maxOrderQuantity": 25.0,
+                "weighted": false
+            },
+            "badges": {
+                "textBadge": null,
+                "loyaltyBadge": null,
+                "dealBadge": null,
+                "newItemBadge": null
+            },
+            "stockStatus": "OK",
+            "articleNumber": "20434411",
+            "uom": "EA",
+            "taxes": null,
+            "fees": null,
+            "sellerId": "7411",
+            "sellerName": "nofrills",
+            "isVariant": false,
+            "offerType": "OG",
+            "hasMultipleOffers": false,
+            "aisle": {
+                "name": "Bakery"
+            },
+            "sponsored": false
+        },
+        {
+            "code": "20321662_EA",
+            "name": "Leinsamen Flaxseed & Rye Bread",
+            "description": "Flaxseed rye bread made with natural spring water.",
+            "brand": "Dimpflmeier",
+            "link": "/leinsamen-flaxseed-rye-bread/p/20321662_EA",
+            "imageAssets": [
+                {
+                    "imageUrl": null,
+                    "smallUrl": "https://assets.shop.loblaws.ca/products/20321662/b1/en/front/20321662_front_a01_@2.png",
+                    "mediumUrl": "https://assets.shop.loblaws.ca/products/20321662/b1/en/front/20321662_front_a01_@2.png",
+                    "largeUrl": "https://assets.shop.loblaws.ca/products/20321662/b1/en/front/20321662_front_a01_@2.png",
+                    "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/20321662/b1/en/front/20321662_front_a01_@2.png",
+                    "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/20321662/b1/en/front/20321662_front_a01_@2.png",
+                    "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/20321662/b1/en/front/20321662_front_a01_@2.png"
+                }
+            ],
+            "packageSize": "454 g",
+            "shoppable": true,
+            "prices": {
+                "price": {
+                    "value": 3.99,
+                    "unit": "ea",
+                    "quantity": 1,
+                    "reasonCode": 4,
+                    "type": "REGULAR"
+                },
+                "wasPrice": null,
+                "comparisonPrices": [
+                    {
+                        "value": 0.88,
+                        "unit": "g",
+                        "quantity": 100,
+                        "reasonCode": null,
+                        "type": null
+                    }
+                ]
+            },
+            "pricingUnits": {
+                "type": "SOLD_BY_EACH",
+                "unit": "ea",
+                "interval": 1.0,
+                "minOrderQuantity": 1.0,
+                "maxOrderQuantity": 25.0,
+                "weighted": false
+            },
+            "badges": {
+                "textBadge": null,
+                "loyaltyBadge": null,
+                "dealBadge": null,
+                "newItemBadge": null
+            },
+            "stockStatus": "OK",
+            "articleNumber": "20321662",
             "uom": "EA",
             "taxes": null,
             "fees": null,
@@ -3289,382 +3368,11 @@
             "sponsored": false
         }
     ],
-    "sponsoredCarousels": [
-        {
-            "placementId": "2830a9d2-6deb-4865-b9ad-71828b6dbc2d",
-            "displayOrder": "0",
-            "results": [
-                {
-                    "code": "20797308_EA",
-                    "name": "Smiles Potatoes",
-                    "description": "It\u2019s\r\n  hard not to be happy when you serve McCain Smiles potatoes. These fun and\r\n  delicious mashed potato shaped Smiles are sure to brighten everyone\u2019s day.\r\n  Playful and pleasing, kids of all ages will gobble up these crispy Smiles\r\n  potatoes that are ready in a jiffy. Serve them up as an easy side dish with\r\n  your next meal or as a fast snack and you can be sure that every member of\r\n  your family will definitely be happy to see these delicious McCain\r\n  Smiles.",
-                    "brand": "Mccain",
-                    "link": "/smiles-potatoes/p/20797308_EA",
-                    "imageAssets": [
-                        {
-                            "imageUrl": null,
-                            "smallUrl": "https://assets.shop.loblaws.ca/products/20797308/b1/en/front/20797308_front_a01_@2.png",
-                            "mediumUrl": "https://assets.shop.loblaws.ca/products/20797308/b1/en/front/20797308_front_a01_@2.png",
-                            "largeUrl": "https://assets.shop.loblaws.ca/products/20797308/b1/en/front/20797308_front_a01_@2.png",
-                            "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/20797308/b1/en/front/20797308_front_a01_@2.png",
-                            "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/20797308/b1/en/front/20797308_front_a01_@2.png",
-                            "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/20797308/b1/en/front/20797308_front_a01_@2.png"
-                        }
-                    ],
-                    "packageSize": "650 g",
-                    "shoppable": true,
-                    "prices": {
-                        "price": {
-                            "value": 4.99,
-                            "unit": "ea",
-                            "quantity": 1,
-                            "reasonCode": 4,
-                            "type": "REGULAR"
-                        },
-                        "wasPrice": null,
-                        "comparisonPrices": [
-                            {
-                                "value": 0.77,
-                                "unit": "g",
-                                "quantity": 100,
-                                "reasonCode": null,
-                                "type": null
-                            }
-                        ]
-                    },
-                    "pricingUnits": {
-                        "type": "SOLD_BY_EACH",
-                        "unit": "ea",
-                        "interval": 1.0,
-                        "minOrderQuantity": 1.0,
-                        "maxOrderQuantity": 25.0,
-                        "weighted": false
-                    },
-                    "badges": {
-                        "textBadge": null,
-                        "loyaltyBadge": null,
-                        "dealBadge": {
-                            "type": "MULTI",
-                            "text": "$4.00 MIN 2",
-                            "expiryDate": null,
-                            "promoType": null,
-                            "name": "MULTI"
-                        },
-                        "newItemBadge": null
-                    },
-                    "stockStatus": "OK",
-                    "articleNumber": "20797308",
-                    "uom": "EA",
-                    "taxes": null,
-                    "fees": null,
-                    "sellerId": "7411",
-                    "sellerName": "nofrills",
-                    "isVariant": false,
-                    "offerType": "OG",
-                    "hasMultipleOffers": false,
-                    "aisle": {
-                        "name": "Frozen"
-                    },
-                    "sponsored": true,
-                    "sponsoredCreative": {
-                        "adServingId": "45c94ed0-5736-4a58-877c-3d6849e209a6",
-                        "adPlacement": {
-                            "adPlacementId": "2830a9d2-6deb-4865-b9ad-71828b6dbc2d",
-                            "adPlacementType": "CAROUSEL"
-                        },
-                        "creativeId": "c8abd571-2362-467b-a487-6c4ff726d836",
-                        "creativeBrandId": null,
-                        "creativeCampaignId": "1aa1b848-ae0c-4af1-86af-a2ad2b0f5150",
-                        "adGroupId": "459e2107-469d-4dc0-adb2-8aa02c5b4b76",
-                        "creativeCost": {
-                            "costModel": "CPC",
-                            "rate": "ig7zCs+cNlEptFS/76Pk742I0Qrb/+5wJTzcvA8e9hQ="
-                        },
-                        "target": "bread",
-                        "searchType": "SPONSORED_SEARCH",
-                        "targetAdType": "CROSS_CATEGORY"
-                    }
-                },
-                {
-                    "code": "20799502_EA",
-                    "name": "SuperSpirals Lightly Spiced Fries",
-                    "description": "Get a\r\n  new spin on snack time with McCain SuperSpirals lightly spiced fries. These\r\n  spiral cut fries make for a fast and delicious side that are fun for the\r\n  whole family. Curly shaped and lightly spiced, McCain spiral fries are an\r\n  epic twist on a classic treat that everyone will enjoy. They're made from\r\n  specially selected potatoes, and are trans-fat and cholesterol-free so you\r\n  can feel good about serving them to your family. Easy to prepare, our curly\r\n  fries make dinner fast and delicious any day of the week.",
-                    "brand": "Mccain",
-                    "link": "/superspirals-lightly-spiced-fries/p/20799502_EA",
-                    "imageAssets": [
-                        {
-                            "imageUrl": null,
-                            "smallUrl": "https://assets.shop.loblaws.ca/products/20799502/b1/en/front/20799502_front_a01_@2.png",
-                            "mediumUrl": "https://assets.shop.loblaws.ca/products/20799502/b1/en/front/20799502_front_a01_@2.png",
-                            "largeUrl": "https://assets.shop.loblaws.ca/products/20799502/b1/en/front/20799502_front_a01_@2.png",
-                            "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/20799502/b1/en/front/20799502_front_a01_@2.png",
-                            "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/20799502/b1/en/front/20799502_front_a01_@2.png",
-                            "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/20799502/b1/en/front/20799502_front_a01_@2.png"
-                        }
-                    ],
-                    "packageSize": "650 g",
-                    "shoppable": true,
-                    "prices": {
-                        "price": {
-                            "value": 4.99,
-                            "unit": "ea",
-                            "quantity": 1,
-                            "reasonCode": 4,
-                            "type": "REGULAR"
-                        },
-                        "wasPrice": null,
-                        "comparisonPrices": [
-                            {
-                                "value": 0.77,
-                                "unit": "g",
-                                "quantity": 100,
-                                "reasonCode": null,
-                                "type": null
-                            }
-                        ]
-                    },
-                    "pricingUnits": {
-                        "type": "SOLD_BY_EACH",
-                        "unit": "ea",
-                        "interval": 1.0,
-                        "minOrderQuantity": 1.0,
-                        "maxOrderQuantity": 25.0,
-                        "weighted": false
-                    },
-                    "badges": {
-                        "textBadge": null,
-                        "loyaltyBadge": null,
-                        "dealBadge": {
-                            "type": "MULTI",
-                            "text": "$4.00 MIN 2",
-                            "expiryDate": null,
-                            "promoType": null,
-                            "name": "MULTI"
-                        },
-                        "newItemBadge": null
-                    },
-                    "stockStatus": "OK",
-                    "articleNumber": "20799502",
-                    "uom": "EA",
-                    "taxes": null,
-                    "fees": null,
-                    "sellerId": "7411",
-                    "sellerName": "nofrills",
-                    "isVariant": false,
-                    "offerType": "OG",
-                    "hasMultipleOffers": false,
-                    "aisle": {
-                        "name": "Frozen"
-                    },
-                    "sponsored": true,
-                    "sponsoredCreative": {
-                        "adServingId": "45c94ed0-5736-4a58-877c-3d6849e209a6",
-                        "adPlacement": {
-                            "adPlacementId": "2830a9d2-6deb-4865-b9ad-71828b6dbc2d",
-                            "adPlacementType": "CAROUSEL"
-                        },
-                        "creativeId": "f4aab249-a5cf-4ca6-82b0-51504aa9467b",
-                        "creativeBrandId": null,
-                        "creativeCampaignId": "1aa1b848-ae0c-4af1-86af-a2ad2b0f5150",
-                        "adGroupId": "459e2107-469d-4dc0-adb2-8aa02c5b4b76",
-                        "creativeCost": {
-                            "costModel": "CPC",
-                            "rate": "zlTMUSyCv5KlRuUj8aiIikk7kBll53GS1RZlOts5yUE="
-                        },
-                        "target": "bread",
-                        "searchType": "SPONSORED_SEARCH",
-                        "targetAdType": "CROSS_CATEGORY"
-                    }
-                },
-                {
-                    "code": "20799522_EA",
-                    "name": "Tasti Taters Potato Bites",
-                    "description": "When\r\n  is food tasty and fun? When it's McCain Tasti Taters. Made from real\r\n  potatoes, Tasti Taters are bite-sized bits of deliciousness - crispy on the\r\n  outside and soft on the inside. So easy to prepare - just pop them into a\r\n  pre-heated oven or toaster oven for about 25 minutes and you'll be all set to\r\n  add excitement for breakfast, lunch or dinner. Serve McCain Tasti Taters as a\r\n  fast and easy dinner side dish with your family's next meal and you'll find\r\n  out that your kids won't be the only ones having fun.",
-                    "brand": "Mccain",
-                    "link": "/tasti-taters-potato-bites/p/20799522_EA",
-                    "imageAssets": [
-                        {
-                            "imageUrl": null,
-                            "smallUrl": "https://assets.shop.loblaws.ca/products/20799522/b1/en/front/20799522_front_a01_@2.png",
-                            "mediumUrl": "https://assets.shop.loblaws.ca/products/20799522/b1/en/front/20799522_front_a01_@2.png",
-                            "largeUrl": "https://assets.shop.loblaws.ca/products/20799522/b1/en/front/20799522_front_a01_@2.png",
-                            "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/20799522/b1/en/front/20799522_front_a01_@2.png",
-                            "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/20799522/b1/en/front/20799522_front_a01_@2.png",
-                            "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/20799522/b1/en/front/20799522_front_a01_@2.png"
-                        }
-                    ],
-                    "packageSize": "800 g",
-                    "shoppable": true,
-                    "prices": {
-                        "price": {
-                            "value": 4.99,
-                            "unit": "ea",
-                            "quantity": 1,
-                            "reasonCode": 4,
-                            "type": "REGULAR"
-                        },
-                        "wasPrice": null,
-                        "comparisonPrices": [
-                            {
-                                "value": 0.62,
-                                "unit": "g",
-                                "quantity": 100,
-                                "reasonCode": null,
-                                "type": null
-                            }
-                        ]
-                    },
-                    "pricingUnits": {
-                        "type": "SOLD_BY_EACH",
-                        "unit": "ea",
-                        "interval": 1.0,
-                        "minOrderQuantity": 1.0,
-                        "maxOrderQuantity": 25.0,
-                        "weighted": false
-                    },
-                    "badges": {
-                        "textBadge": null,
-                        "loyaltyBadge": null,
-                        "dealBadge": {
-                            "type": "MULTI",
-                            "text": "$4.00 MIN 2",
-                            "expiryDate": null,
-                            "promoType": null,
-                            "name": "MULTI"
-                        },
-                        "newItemBadge": null
-                    },
-                    "stockStatus": "OK",
-                    "articleNumber": "20799522",
-                    "uom": "EA",
-                    "taxes": null,
-                    "fees": null,
-                    "sellerId": "7411",
-                    "sellerName": "nofrills",
-                    "isVariant": false,
-                    "offerType": "OG",
-                    "hasMultipleOffers": false,
-                    "aisle": {
-                        "name": "Frozen"
-                    },
-                    "sponsored": true,
-                    "sponsoredCreative": {
-                        "adServingId": "45c94ed0-5736-4a58-877c-3d6849e209a6",
-                        "adPlacement": {
-                            "adPlacementId": "2830a9d2-6deb-4865-b9ad-71828b6dbc2d",
-                            "adPlacementType": "CAROUSEL"
-                        },
-                        "creativeId": "7523ecf1-80a9-4fd3-8014-5c1498359ac7",
-                        "creativeBrandId": null,
-                        "creativeCampaignId": "1aa1b848-ae0c-4af1-86af-a2ad2b0f5150",
-                        "adGroupId": "459e2107-469d-4dc0-adb2-8aa02c5b4b76",
-                        "creativeCost": {
-                            "costModel": "CPC",
-                            "rate": "aQWnWgix9EazNkKVofxabLrP8K0B6Se1vc764ImXeYs="
-                        },
-                        "target": "bread",
-                        "searchType": "SPONSORED_SEARCH",
-                        "targetAdType": "CROSS_CATEGORY"
-                    }
-                },
-                {
-                    "code": "20325644004_EA",
-                    "name": "Breakfast Potato Pancakes",
-                    "description": "Enjoy the great taste of potato pancakes without all the work. McCain Potato Pancakes are so easy to prepare they make mealtime a snap. These delicious breakfast potatoes are made with real shredded potatoes that have been lightly seasoned with onions and spices and are perfect to enjoy with breakfast or as a side dish at dinner. A savoury treat, these potato pancakes are also trans-fat and cholesterol free so you can feel good serving them to your family.",
-                    "brand": "Mccain",
-                    "link": "/breakfast-potato-pancakes/p/20325644004_EA",
-                    "imageAssets": [
-                        {
-                            "imageUrl": null,
-                            "smallUrl": "https://assets.shop.loblaws.ca/products/20325644004/b1/en/front/20325644004_front_a01_@2.png",
-                            "mediumUrl": "https://assets.shop.loblaws.ca/products/20325644004/b1/en/front/20325644004_front_a01_@2.png",
-                            "largeUrl": "https://assets.shop.loblaws.ca/products/20325644004/b1/en/front/20325644004_front_a01_@2.png",
-                            "smallRetinaUrl": "https://assets.shop.loblaws.ca/products/20325644004/b1/en/front/20325644004_front_a01_@2.png",
-                            "mediumRetinaUrl": "https://assets.shop.loblaws.ca/products/20325644004/b1/en/front/20325644004_front_a01_@2.png",
-                            "largeRetinaUrl": "https://assets.shop.loblaws.ca/products/20325644004/b1/en/front/20325644004_front_a01_@2.png"
-                        }
-                    ],
-                    "packageSize": "600 g",
-                    "shoppable": true,
-                    "prices": {
-                        "price": {
-                            "value": 4.99,
-                            "unit": "ea",
-                            "quantity": 1,
-                            "reasonCode": 4,
-                            "type": "REGULAR"
-                        },
-                        "wasPrice": null,
-                        "comparisonPrices": [
-                            {
-                                "value": 0.83,
-                                "unit": "g",
-                                "quantity": 100,
-                                "reasonCode": null,
-                                "type": null
-                            }
-                        ]
-                    },
-                    "pricingUnits": {
-                        "type": "SOLD_BY_EACH",
-                        "unit": "ea",
-                        "interval": 1.0,
-                        "minOrderQuantity": 1.0,
-                        "maxOrderQuantity": 25.0,
-                        "weighted": false
-                    },
-                    "badges": {
-                        "textBadge": null,
-                        "loyaltyBadge": null,
-                        "dealBadge": {
-                            "type": "MULTI",
-                            "text": "$4.00 MIN 2",
-                            "expiryDate": null,
-                            "promoType": null,
-                            "name": "MULTI"
-                        },
-                        "newItemBadge": null
-                    },
-                    "stockStatus": "OK",
-                    "articleNumber": "20325644004",
-                    "uom": "EA",
-                    "taxes": null,
-                    "fees": null,
-                    "sellerId": "7411",
-                    "sellerName": "nofrills",
-                    "isVariant": false,
-                    "offerType": "OG",
-                    "hasMultipleOffers": false,
-                    "aisle": {
-                        "name": "Frozen"
-                    },
-                    "sponsored": true,
-                    "sponsoredCreative": {
-                        "adServingId": "45c94ed0-5736-4a58-877c-3d6849e209a6",
-                        "adPlacement": {
-                            "adPlacementId": "2830a9d2-6deb-4865-b9ad-71828b6dbc2d",
-                            "adPlacementType": "CAROUSEL"
-                        },
-                        "creativeId": "f27f2189-e9a4-4d67-84e1-62ef4a19748c",
-                        "creativeBrandId": null,
-                        "creativeCampaignId": "1aa1b848-ae0c-4af1-86af-a2ad2b0f5150",
-                        "adGroupId": "459e2107-469d-4dc0-adb2-8aa02c5b4b76",
-                        "creativeCost": {
-                            "costModel": "CPC",
-                            "rate": "//IyIFSiz0qOCIXsvvTT/cht20A7yia2SolkAhXZHmk="
-                        },
-                        "target": "bread",
-                        "searchType": "SPONSORED_SEARCH",
-                        "targetAdType": "CROSS_CATEGORY"
-                    }
-                }
-            ]
-        }
-    ],
+    "sponsoredCarousels": [],
     "pagination": {
         "pageNumber": 0,
         "pageSize": 48,
-        "totalResults": 501
+        "totalResults": 484
     },
     "sorts": [
         {
@@ -3722,16 +3430,16 @@
                     "selected": false
                 },
                 {
-                    "code": "",
-                    "name": "",
+                    "code": "High Liner",
+                    "name": "High Liner",
                     "count": 17,
                     "disabled": null,
                     "selected": false
                 },
                 {
-                    "code": "High Liner",
-                    "name": "High Liner",
-                    "count": 17,
+                    "code": "Dimpflmeier",
+                    "name": "Dimpflmeier",
+                    "count": 16,
                     "disabled": null,
                     "selected": false
                 },
@@ -3743,23 +3451,16 @@
                     "selected": false
                 },
                 {
+                    "code": "",
+                    "name": "",
+                    "count": 14,
+                    "disabled": null,
+                    "selected": false
+                },
+                {
                     "code": "Country Harvest",
                     "name": "Country Harvest",
-                    "count": 15,
-                    "disabled": null,
-                    "selected": false
-                },
-                {
-                    "code": "Dimpflmeier",
-                    "name": "Dimpflmeier",
-                    "count": 15,
-                    "disabled": null,
-                    "selected": false
-                },
-                {
-                    "code": "Crispy",
-                    "name": "Crispy",
-                    "count": 12,
+                    "count": 13,
                     "disabled": null,
                     "selected": false
                 },
@@ -3767,6 +3468,13 @@
                     "code": "Dare",
                     "name": "Dare",
                     "count": 12,
+                    "disabled": null,
+                    "selected": false
+                },
+                {
+                    "code": "Crispy",
+                    "name": "Crispy",
+                    "count": 11,
                     "disabled": null,
                     "selected": false
                 },
@@ -3799,8 +3507,8 @@
                     "selected": false
                 },
                 {
-                    "code": "PC Black Label",
-                    "name": "PC Black Label",
+                    "code": "La Baguetterie",
+                    "name": "La Baguetterie",
                     "count": 7,
                     "disabled": null,
                     "selected": false
@@ -3820,6 +3528,13 @@
                     "selected": false
                 },
                 {
+                    "code": "Dempster",
+                    "name": "Dempster",
+                    "count": 6,
+                    "disabled": null,
+                    "selected": false
+                },
+                {
                     "code": "Frontier Bakery",
                     "name": "Frontier Bakery",
                     "count": 6,
@@ -3834,20 +3549,6 @@
                     "selected": false
                 },
                 {
-                    "code": "La Baguetterie",
-                    "name": "La Baguetterie",
-                    "count": 6,
-                    "disabled": null,
-                    "selected": false
-                },
-                {
-                    "code": "Shana",
-                    "name": "Shana",
-                    "count": 6,
-                    "disabled": null,
-                    "selected": false
-                },
-                {
                     "code": "Ziggy's",
                     "name": "Ziggy's",
                     "count": 6,
@@ -3855,15 +3556,15 @@
                     "selected": false
                 },
                 {
-                    "code": "Dempster",
-                    "name": "Dempster",
+                    "code": "Little Northern Bakehouse",
+                    "name": "Little Northern Bakehouse",
                     "count": 5,
                     "disabled": null,
                     "selected": false
                 },
                 {
-                    "code": "Little Northern Bakehouse",
-                    "name": "Little Northern Bakehouse",
+                    "code": "PC Black Label",
+                    "name": "PC Black Label",
                     "count": 5,
                     "disabled": null,
                     "selected": false
@@ -3883,8 +3584,8 @@
                     "selected": false
                 },
                 {
-                    "code": "Stonemill",
-                    "name": "Stonemill",
+                    "code": "Suraj",
+                    "name": "Suraj",
                     "count": 5,
                     "disabled": null,
                     "selected": false
@@ -3904,8 +3605,8 @@
                     "selected": false
                 },
                 {
-                    "code": "Oroweat",
-                    "name": "Oroweat",
+                    "code": "PC Organics",
+                    "name": "PC Organics",
                     "count": 4,
                     "disabled": null,
                     "selected": false
@@ -3925,27 +3626,6 @@
                     "selected": false
                 },
                 {
-                    "code": "Suraj",
-                    "name": "Suraj",
-                    "count": 4,
-                    "disabled": null,
-                    "selected": false
-                },
-                {
-                    "code": "Bertolli",
-                    "name": "Bertolli",
-                    "count": 3,
-                    "disabled": null,
-                    "selected": false
-                },
-                {
-                    "code": "Cheez-It",
-                    "name": "Cheez-It",
-                    "count": 3,
-                    "disabled": null,
-                    "selected": false
-                },
-                {
                     "code": "Fleischmanns",
                     "name": "Fleischmanns",
                     "count": 3,
@@ -3960,13 +3640,6 @@
                     "selected": false
                 },
                 {
-                    "code": "Galil",
-                    "name": "Galil",
-                    "count": 3,
-                    "disabled": null,
-                    "selected": false
-                },
-                {
                     "code": "Mina",
                     "name": "Mina",
                     "count": 3,
@@ -3974,15 +3647,8 @@
                     "selected": false
                 },
                 {
-                    "code": "PC Organics",
-                    "name": "PC Organics",
-                    "count": 3,
-                    "disabled": null,
-                    "selected": false
-                },
-                {
-                    "code": "PC Splendido",
-                    "name": "PC Splendido",
+                    "code": "Oroweat",
+                    "name": "Oroweat",
                     "count": 3,
                     "disabled": null,
                     "selected": false
@@ -4009,8 +3675,15 @@
                     "selected": false
                 },
                 {
-                    "code": "Skyflakes",
-                    "name": "Skyflakes",
+                    "code": "Shana",
+                    "name": "Shana",
+                    "count": 3,
+                    "disabled": null,
+                    "selected": false
+                },
+                {
+                    "code": "Stonemill",
+                    "name": "Stonemill",
                     "count": 3,
                     "disabled": null,
                     "selected": false
@@ -4058,6 +3731,13 @@
                     "selected": false
                 },
                 {
+                    "code": "Bertolli",
+                    "name": "Bertolli",
+                    "count": 2,
+                    "disabled": null,
+                    "selected": false
+                },
+                {
                     "code": "Breadko",
                     "name": "Breadko",
                     "count": 2,
@@ -4100,15 +3780,15 @@
                     "selected": false
                 },
                 {
-                    "code": "Classico",
-                    "name": "Classico",
+                    "code": "Cheez-It",
+                    "name": "Cheez-It",
                     "count": 2,
                     "disabled": null,
                     "selected": false
                 },
                 {
-                    "code": "Finn Crisp",
-                    "name": "Finn Crisp",
+                    "code": "Classico",
+                    "name": "Classico",
                     "count": 2,
                     "disabled": null,
                     "selected": false
@@ -4128,15 +3808,15 @@
                     "selected": false
                 },
                 {
-                    "code": "Gay Lea",
-                    "name": "Gay Lea",
+                    "code": "Galil",
+                    "name": "Galil",
                     "count": 2,
                     "disabled": null,
                     "selected": false
                 },
                 {
-                    "code": "Golden Temple",
-                    "name": "Golden Temple",
+                    "code": "Gay Lea",
+                    "name": "Gay Lea",
                     "count": 2,
                     "disabled": null,
                     "selected": false
@@ -4151,6 +3831,13 @@
                 {
                     "code": "Grissol",
                     "name": "Grissol",
+                    "count": 2,
+                    "disabled": null,
+                    "selected": false
+                },
+                {
+                    "code": "HTB",
+                    "name": "HTB",
                     "count": 2,
                     "disabled": null,
                     "selected": false
@@ -4184,6 +3871,13 @@
                     "selected": false
                 },
                 {
+                    "code": "PC Splendido",
+                    "name": "PC Splendido",
+                    "count": 2,
+                    "disabled": null,
+                    "selected": false
+                },
+                {
                     "code": "Pepperidge Farm",
                     "name": "Pepperidge Farm",
                     "count": 2,
@@ -4200,6 +3894,13 @@
                 {
                     "code": "Robin Hood",
                     "name": "Robin Hood",
+                    "count": 2,
+                    "disabled": null,
+                    "selected": false
+                },
+                {
+                    "code": "Skyflakes",
+                    "name": "Skyflakes",
                     "count": 2,
                     "disabled": null,
                     "selected": false
@@ -4254,6 +3955,13 @@
                     "selected": false
                 },
                 {
+                    "code": "Deli World",
+                    "name": "Deli World",
+                    "count": 1,
+                    "disabled": null,
+                    "selected": false
+                },
+                {
                     "code": "Earth Balance",
                     "name": "Earth Balance",
                     "count": 1,
@@ -4298,6 +4006,13 @@
                 {
                     "code": "Go Macro",
                     "name": "Go Macro",
+                    "count": 1,
+                    "disabled": null,
+                    "selected": false
+                },
+                {
+                    "code": "Golden Temple",
+                    "name": "Golden Temple",
                     "count": 1,
                     "disabled": null,
                     "selected": false
@@ -4352,13 +4067,6 @@
                     "selected": false
                 },
                 {
-                    "code": "Lean Cuisine",
-                    "name": "Lean Cuisine",
-                    "count": 1,
-                    "disabled": null,
-                    "selected": false
-                },
-                {
                     "code": "Leclerc",
                     "name": "Leclerc",
                     "count": 1,
@@ -4396,13 +4104,6 @@
                 {
                     "code": "Paneriso",
                     "name": "Paneriso",
-                    "count": 1,
-                    "disabled": null,
-                    "selected": false
-                },
-                {
-                    "code": "Pastene",
-                    "name": "Pastene",
                     "count": 1,
                     "disabled": null,
                     "selected": false
@@ -4513,13 +4214,6 @@
                     "selected": false
                 },
                 {
-                    "code": "Villaggio",
-                    "name": "Villaggio",
-                    "count": 1,
-                    "disabled": null,
-                    "selected": false
-                },
-                {
                     "code": "Vita Sana",
                     "name": "Vita Sana",
                     "count": 1,
@@ -4544,7 +4238,7 @@
                 {
                     "code": "Price Drop",
                     "name": "Price Drop",
-                    "count": 39,
+                    "count": 36,
                     "disabled": null,
                     "selected": false
                 },
@@ -4558,7 +4252,14 @@
                 {
                     "code": "$1,$2,$3,$4,$5",
                     "name": "$1,$2,$3,$4,$5",
-                    "count": 26,
+                    "count": 19,
+                    "disabled": null,
+                    "selected": false
+                },
+                {
+                    "code": "PC Points",
+                    "name": "PC Optimum Points",
+                    "count": 4,
                     "disabled": null,
                     "selected": false
                 }
@@ -4573,28 +4274,28 @@
                 {
                     "code": "$5 and under",
                     "name": "$5 and under",
-                    "count": 284,
+                    "count": 269,
                     "disabled": null,
                     "selected": false
                 },
                 {
                     "code": "$5-$10",
                     "name": "$5-$10",
-                    "count": 149,
+                    "count": 158,
                     "disabled": null,
                     "selected": false
                 },
                 {
                     "code": "$10-$15",
                     "name": "$10-$15",
-                    "count": 55,
+                    "count": 52,
                     "disabled": null,
                     "selected": false
                 },
                 {
                     "code": "$15-$20",
                     "name": "$15-$20",
-                    "count": 24,
+                    "count": 16,
                     "disabled": null,
                     "selected": false
                 },
@@ -4623,7 +4324,7 @@
                 {
                     "code": "nofrills",
                     "name": "nofrills",
-                    "count": 501,
+                    "count": 484,
                     "disabled": null,
                     "selected": false
                 }
@@ -4638,7 +4339,7 @@
                 {
                     "code": "27985",
                     "name": "Food",
-                    "count": 501,
+                    "count": 484,
                     "disabled": null,
                     "selected": false,
                     "categoryType": "clp",
@@ -4647,7 +4348,7 @@
                         {
                             "code": "58044",
                             "name": "International Foods",
-                            "count": 77,
+                            "count": 70,
                             "disabled": null,
                             "selected": false,
                             "categoryType": "plp",
@@ -4656,7 +4357,7 @@
                         {
                             "code": "27998",
                             "name": "Meat",
-                            "count": 32,
+                            "count": 31,
                             "disabled": null,
                             "selected": false,
                             "categoryType": "plp",
@@ -4665,7 +4366,7 @@
                         {
                             "code": "28006",
                             "name": "Pantry",
-                            "count": 90,
+                            "count": 85,
                             "disabled": null,
                             "selected": false,
                             "categoryType": "plp",
@@ -4692,7 +4393,7 @@
                         {
                             "code": "28000",
                             "name": "Fruits & Vegetables",
-                            "count": 5,
+                            "count": 4,
                             "disabled": null,
                             "selected": false,
                             "categoryType": "plp",
@@ -4701,7 +4402,7 @@
                         {
                             "code": "28001",
                             "name": "Deli",
-                            "count": 85,
+                            "count": 82,
                             "disabled": null,
                             "selected": false,
                             "categoryType": "plp",
@@ -4710,7 +4411,7 @@
                         {
                             "code": "28005",
                             "name": "Frozen",
-                            "count": 115,
+                            "count": 109,
                             "disabled": null,
                             "selected": false,
                             "categoryType": "plp",
@@ -4728,7 +4429,7 @@
                         {
                             "code": "57025",
                             "name": "Snacks, Chips & Candy",
-                            "count": 70,
+                            "count": 65,
                             "disabled": null,
                             "selected": false,
                             "categoryType": "plp",
@@ -4737,7 +4438,7 @@
                         {
                             "code": "28002",
                             "name": "Bakery",
-                            "count": 164,
+                            "count": 163,
                             "disabled": null,
                             "selected": false,
                             "categoryType": "plp",
@@ -4746,7 +4447,7 @@
                         {
                             "code": "28189",
                             "name": "Natural Foods ",
-                            "count": 12,
+                            "count": 13,
                             "disabled": null,
                             "selected": false,
                             "categoryType": "plp",
@@ -4871,6 +4572,6 @@
     "searchVariation": "WEIGHTED_SUM:WEIGHTED_SUM_ENABLED",
     "dym": [],
     "offerTypes": {
-        "OG": 501
+        "OG": 484
     }
 }
