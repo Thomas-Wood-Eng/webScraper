@@ -67,4 +67,9 @@ def fetchIGABCMain(term):
 
 
     with open("fetch_IGA-BC.json", "w") as outfile:
-        json.dump(response.json(), outfile)
+        json.dump(response.json(), outfile)\
+            
+            
+            
+
+            

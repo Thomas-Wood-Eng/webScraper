@@ -45,7 +45,7 @@ def fetchSuperstoreMain(query):
 
     # print(response.json())
 
-    with open("fetch_superstore2.json", "w") as outfile:
+    with open("fetch_superstore.json", "w") as outfile:
         json.dump(response.json(), outfile)
 # Note: json_data will not be serialized by requests
 # exactly as it was in the original request.

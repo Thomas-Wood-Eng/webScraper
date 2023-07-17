@@ -11,7 +11,7 @@ from jsonParserSuperstoreNoFrills import parseSuperstore
 
 from fuzzywuzzyCompare import compare
 
-query = 'bread'
+query = 'milk'
 
 fetchSafewayMain(query)
 fetchSaveOnMain(query)
@@ -24,5 +24,5 @@ noFrillsList = parseNoFrills()
 safewayList = parseSafeway()
 superstoreList = parseSuperstore()
 
-compare(safewayList, superstoreList, noFrillsList, igaList)
+compare(safewayList, superstoreList, noFrillsList, igaList, query)
 

@@ -75,5 +75,6 @@ def fetchSaveOnMain(query):
 
     data_json = json.dumps(product_list)
 
-    with open("fetch_SaveOn2.json", "w") as outfile:
+    with open("fetch_SaveOn.json", "w") as outfile:
         json.dump(data_json, outfile)
+

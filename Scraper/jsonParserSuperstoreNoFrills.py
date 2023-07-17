@@ -41,9 +41,45 @@ def loblaws(data):
         
         if "prices" in product_data:
             price = product_data["prices"]["price"]["value"]
-            product["price"] = price
-        
+            product["total_price"] = price
+            
+            
+            unit_price = product_data["prices"]["comparisonPrices"][0]["value"]
+            product["unit_price"] = unit_price
+            
+            unit = product_data["prices"]["comparisonPrices"][0]["unit"]
+            product["unit"] = unit
+            
+        if "packageSize" in product_data:
+            size = product_data["packageSize"]
+            product["amount"] = size
+            
+            
+        if "shoppable" in product_data:
+            is_avalible = product_data["shoppable"]
+            product["is_avalible"] = is_avalible
+            
+        if "sellerName" in product_data:
+            seller = product_data["sellerName"]
+            product["merchant"] = seller
+            
+        if "articleNumber" in product_data:
+            productId = product_data["articleNumber"]
+            product["merchant_productId"] = productId
+            
+        if "imageAssets" in product_data:
+            image = product_data["imageAssets"][0]["largeRetinaUrl"]
+            product["image_link"] = image
+            
+        product["storeID"] = ""
+            
         productList.append(product)
     
+    print(productList)
     return(productList)
+
+parseSuperstore()
+parseNoFrills()
+
+# TODO: Find the store ID/Area the store is
         
