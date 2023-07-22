@@ -24,13 +24,42 @@ def parseIGA():
             # print(name)
             product["name"] = name
         
-        if "Price" in product_data:
-            price = product_data["Price"]
+        if "CountDetails" in product_data:
+            if product_data["CountDetails"]["DiscountPriceText"] == None:
+                price = product_data["Price"]
+            else:
+                price = product_data["CountDetails"]["DiscountPriceText"]
             # print(price)
-            product["price"] = price
+            product["total_price"] = price
+            
+        #if "ImageURL" in product_data:
+        image = product_data["ImageURL"]
+        product["image_link"] = image
+            
+        product["merchant"] = "IGA"
+        
+        if "Amount" in product_data:
+            unit = product_data["Amount"]
+            product["unit"] = unit
+            
+        if "IsActive" in product_data:
+            avalible = product_data["IsActive"]
+            product["is_available"] = avalible
+        
+        product["amount"] = 1
+        
+        if "ProductID" in product_data:
+            product["merchant_productId"] = product_data["ProductID"]
+            
+        product["storeID"] = ""
         
         productList.append(product)
         
-    return(productList)   
+    #print(productList)
+    return(productList)
+
+parseIGA()   
+
+
 
         

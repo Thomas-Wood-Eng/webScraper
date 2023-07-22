@@ -1,6 +1,9 @@
 from fuzzywuzzy import fuzz
 
-def compare(safewayList, superstoreList, noFrillsList, igaList):    
+def compare(safewayList, superstoreList, noFrillsList, igaList, query):    
+
+    groupList = []
+    groupID = 1
 
     for safeway in safewayList:
         igaMax = 0
@@ -24,11 +27,12 @@ def compare(safewayList, superstoreList, noFrillsList, igaList):
                         igaMax = similarity_ratio
                         igaProduct = iga["name"]
                         igaBrand = iga["brand"]
+                        igaItem = iga
 
-        print(f"Safeway Product: {safeway}")
-        print(f"IGA Product: {igaProduct}")
-        print(f"IGA Brand: {igaBrand}")
-        print(f"Similarity Ratio: {igaMax}")
+        #print(f"Safeway Product: {safeway}")
+        #print(f"IGA Product: {igaProduct}")
+        #print(f"IGA Brand: {igaBrand}")
+        #print(f"Similarity Ratio: {igaMax}")
         
         for noFrills in noFrillsList:
             
@@ -39,11 +43,12 @@ def compare(safewayList, superstoreList, noFrillsList, igaList):
                         noFrillsMax = similarity_ratio
                         noFrillsProduct = noFrills["name"]
                         noFrillsBrand = noFrills["brand"]
+                        noFrillsItem = noFrills
 
         #print(f"Safeway Product: {safeway}")
-        print(f"NoFrills Product: {noFrillsProduct}")
-        print(f"NoFrills Brand: {noFrillsBrand}")
-        print(f"Similarity Ratio: {noFrillsMax}")
+        #print(f"NoFrills Product: {noFrillsProduct}")
+        #print(f"NoFrills Brand: {noFrillsBrand}")
+        #print(f"Similarity Ratio: {noFrillsMax}")
         
         for superstore in superstoreList:
             
@@ -54,8 +59,35 @@ def compare(safewayList, superstoreList, noFrillsList, igaList):
                         superstoreMax = similarity_ratio
                         superstoreProduct = superstore["name"]
                         superstoreBrand = superstore["brand"]
+                        superstoreItem = superstore
 
         #print(f"Safeway Product: {safeway}")
-        print(f"Superstore Product: {superstoreProduct}")
-        print(f"Superstore Brand: {superstoreBrand}")
-        print(f"Similarity Ratio: {superstoreMax}")
+        #print(f"Superstore Product: {superstoreProduct}")
+        #print(f"Superstore Brand: {superstoreBrand}")
+        #print(f"Similarity Ratio: {superstoreMax}")
+        
+        group = {}
+        
+        products = []
+        
+        products.append(safeway)
+        
+        if igaMax >= 50:
+            products.append(igaItem)
+            
+        if noFrillsMax >= 50:
+            products.append(noFrillsItem)
+            
+        if superstoreMax >= 50:
+            products.append(superstoreItem)
+            
+        group["groupID"] = groupID
+        group["search_string"] = query
+        group["products"] = products
+        
+        groupList.append(group)
+        
+        groupID += 1
+    
+    print(groupList)
+    return groupList
