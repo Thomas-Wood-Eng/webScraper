@@ -55,10 +55,11 @@ def parseIGA():
         
         productList.append(product)
         
-    #print(productList)
+    # print(productList)
     return(productList)
 
-parseIGA()   
+if __name__ == '__main__':
+    parseIGA()   
 
 
 
