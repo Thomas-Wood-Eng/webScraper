@@ -68,13 +68,14 @@ def parseSafeway():
         
         productList.append(product)
         
-    print(productList)   
+    # print(productList)   
     return(productList)
 
-parseSafeway()
+if __name__ == '__main__':
+    parseSafeway()
         
         
-#TODO: Size conversation
+# TODO: Size conversation
 
 
 

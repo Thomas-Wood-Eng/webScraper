@@ -75,11 +75,12 @@ def loblaws(data):
             
         productList.append(product)
     
-    print(productList)
+    # print(productList)
     return(productList)
 
-parseSuperstore()
-parseNoFrills()
+if __name__ == '__main__':
+    parseSuperstore()
+    parseNoFrills()
 
 # TODO: Find the store ID/Area the store is
         

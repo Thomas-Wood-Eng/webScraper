@@ -73,8 +73,8 @@ def fetchSaveOnMain(query):
             }
             product_list.append(product)
 
-    data_json = json.dumps(product_list)
+    # data_json = json.dumps(product_list)
 
     with open("fetch_SaveOn.json", "w") as outfile:
-        json.dump(data_json, outfile)
+        json.dump(product_list, outfile)
 

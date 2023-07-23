@@ -1,6 +1,6 @@
 from fuzzywuzzy import fuzz
 
-def compare(safewayList, superstoreList, noFrillsList, igaList, query):    
+def compare(safewayList, superstoreList, noFrillsList, igaList, query, DEBUG=False):    
 
     groupList = []
     groupID = 1
@@ -89,5 +89,6 @@ def compare(safewayList, superstoreList, noFrillsList, igaList, query):
         
         groupID += 1
     
-    print(groupList)
+    if(DEBUG):
+        print(groupList)
     return groupList
