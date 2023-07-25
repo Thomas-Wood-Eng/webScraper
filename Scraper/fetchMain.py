@@ -15,14 +15,13 @@ import json
 
 DEBUG = False
 
-if __name__ == '__main__':
-    query = 'milk'
+def fetchAndCompare(squery:str):
 
-    fetchSafewayMain(query)
-    fetchSaveOnMain(query)
-    fetchSuperstoreMain(query)
-    fetchNoFrillsMain(query)
-    fetchIGABCMain(query)
+    fetchSafewayMain(squery)
+    fetchSaveOnMain(squery)
+    fetchSuperstoreMain(squery)
+    fetchNoFrillsMain(squery)
+    fetchIGABCMain(squery)
 
     igaList = parseIGA()
     noFrillsList = parseNoFrills()
@@ -42,8 +41,10 @@ if __name__ == '__main__':
         if(os.path.exists('fetch_superstore.json')):
             os.remove('fetch_superstore.json')
 
-    groupList = compare(safewayList, superstoreList, noFrillsList, igaList, query)
+    groupList = compare(safewayList, superstoreList, noFrillsList, igaList, squery)
 
-    with open("matchedGroups.json", "w") as f:
-        json.dump(groupList, f)
+    if(DEBUG):
+        with open("matchedGroups.json", "w") as f:
+            json.dump(groupList, f)
 
+    return groupList
