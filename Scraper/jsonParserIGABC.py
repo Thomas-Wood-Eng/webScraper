@@ -12,6 +12,8 @@ def parseIGA():
     for product_data in data["Products"]["Result"]:
     
         product = {}
+        
+        size = {}
     
         if "Brand" in product_data:
             brand = product_data["Brand"]
@@ -40,22 +42,24 @@ def parseIGA():
         
         if "Amount" in product_data:
             unit = product_data["Amount"]
-            product["unit"] = unit
+            size["unit"] = unit
             
         if "IsActive" in product_data:
             avalible = product_data["IsActive"]
             product["is_available"] = avalible
         
-        product["amount"] = 1
+        size["amount"] = 1
         
         if "ProductID" in product_data:
             product["merchant_productId"] = product_data["ProductID"]
             
         product["storeID"] = ""
         
+        product["size"] = size
+        
         productList.append(product)
         
-    # print(productList)
+    #print(productList)
     return(productList)
 
 if __name__ == '__main__':

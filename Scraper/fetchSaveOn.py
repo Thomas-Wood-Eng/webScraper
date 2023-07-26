@@ -76,33 +76,36 @@ def fetchSaveOnMain(query):
         product = {}
         
         brand = child['brand']
-        print(brand)
+        #print(brand)
         name = child['name']
-        print(name)
+        #print(name)
         price = child['price']
-        print(price)
+        #print(price)
         available = child['available']
-        print(available)
+        #print(available)
         unitOfPrice = child['unitOfPrice']['label']
-        print(unitOfPrice)
+        #print(unitOfPrice)
         unitOfSize = child['unitOfSize']['abbreviation']
-        print(unitOfSize)
-        size = child['unitOfSize']['size']
-        print(size)
+        #print(unitOfSize)
+        amount = child['unitOfSize']['size']
+        #print(size)
         unitPrice = child['unitPrice']
-        print(unitPrice)
+        #print(unitPrice)
         productID = child['sku']
-        print(productID)
+        #print(productID)
         image = child['image']['default']
-        print(image)
+        #print(image)
+        
+        size = {}
         
         product["brand"] = brand
         product["name"] = name
         product["merchant"] = "Save-On-Foods"
         product["unit_price"] = unitPrice
         product["total_price"] = price
-        product["amount"] = size
-        product["unit"] = unitOfSize
+        size["amount"] = amount
+        size["unit"] = unitOfSize
+        product["size"] = size
         product["storeID"] = ""
         product["isAvailable"] = available
         product["image_link"] = image
@@ -110,7 +113,7 @@ def fetchSaveOnMain(query):
         
         product_list.append(product)
 
-    print(product_list)
+    #print(product_list)
 
     return product_list
 

@@ -111,14 +111,17 @@ def fetchWalmartMain(param):
         product = {}
         
         name = product_info["name"]
-        size = product_info["description"]
+        productSize = product_info["description"]
         productID = product_info["id"]
-        unit = size.split()
+        unit = productSize.split()
         #print(unit[1])
         
+        size = {}
+        
         product["name"] = name
-        product["amount"] = size
-        product["unit"] = unit[1]
+        size["amount"] = unit[0]
+        size["unit"] = unit[1]
+        product["size"] = size
         product["merchant_productId"] = productID
 
 
@@ -157,7 +160,7 @@ def fetchWalmartMain(param):
         
         productList.append(product)
         
-    print(productList)
+    #print(productList)
     
     return productList
 
