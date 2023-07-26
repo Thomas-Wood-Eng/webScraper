@@ -30,8 +30,8 @@ def parseSafeway():
             # print(price)
             product["total_price"] = price
             
-            unit_price = product_data["price"]["unit"]["current"]["amount"]
-            product["unit_price"] = unit_price
+            #unit_price = product_data["price"]["unit"]["current"]["amount"]
+            #product["unit_price"] = unit_price
             
             """label = product_data["price"]["unit"]["label"]
             match = re.search(r"\d+(\D+)", label)

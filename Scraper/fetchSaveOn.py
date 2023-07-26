@@ -83,7 +83,7 @@ def fetchSaveOnMain(query):
         #print(price)
         available = child['available']
         #print(available)
-        unitOfPrice = child['unitOfPrice']['label']
+        #unitOfPrice = child['unitOfPrice']['label']
         #print(unitOfPrice)
         unitOfSize = child['unitOfSize']['abbreviation']
         #print(unitOfSize)
@@ -101,7 +101,7 @@ def fetchSaveOnMain(query):
         product["brand"] = brand
         product["name"] = name
         product["merchant"] = "Save-On-Foods"
-        product["unit_price"] = unitPrice
+        #product["unit_price"] = unitPrice
         product["total_price"] = price
         size["amount"] = amount
         size["unit"] = unitOfSize

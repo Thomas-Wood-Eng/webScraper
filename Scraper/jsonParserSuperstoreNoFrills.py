@@ -45,8 +45,8 @@ def loblaws(data):
             product["total_price"] = price
             
             
-            unit_price = product_data["prices"]["comparisonPrices"][0]["value"]
-            product["unit_price"] = unit_price
+            #unit_price = product_data["prices"]["comparisonPrices"][0]["value"]
+            #product["unit_price"] = unit_price
             
             #unit = product_data["prices"]["comparisonPrices"][0]["unit"]
             

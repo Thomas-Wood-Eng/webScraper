@@ -155,7 +155,7 @@ def fetchWalmartMain(param):
         product["inStoreAvailable"] = storeAvailability
         product["image_link"] = image
         product["storeID"] = ""
-        product["unit_price"] = "Need exact Price"
+        #product["unit_price"] = "Need exact Price"
         
         
         productList.append(product)
