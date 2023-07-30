@@ -16,7 +16,7 @@ import json
 
 DEBUG = False
 
-def fetchAndCompare(squery:str):
+def fetchAndCompare(squery:str, province_id:int):
 
     fetchSafewayMain(squery)
     fetchSaveOnMain(squery)
@@ -31,7 +31,9 @@ def fetchAndCompare(squery:str):
     saveOnList = fetchSaveOnMain(squery)
     walmartList = fetchWalmartMain(squery)
 
-        # deleting the fetch jsons
+    groupList = compare(safewayList, superstoreList, noFrillsList, igaList, walmartList, saveOnList, squery, province_id)
+        
+    # deleting the fetch jsons
     if(not DEBUG):
         if(os.path.exists('fetch_IGA-BC.json')):
             os.remove('fetch_IGA-BC.json')
@@ -44,13 +46,14 @@ def fetchAndCompare(squery:str):
         if(os.path.exists('fetch_superstore.json')):
             os.remove('fetch_superstore.json')
 
-        groupList = compare(safewayList, superstoreList, noFrillsList, igaList, walmartList, saveOnList, squery)
+    
 
-        with open("matchedGroups.json", "w") as f:
-            json.dump(groupList, f)
+    with open("matchedGroups.json", "w") as f:
+        json.dump(groupList, f)
 
-        return groupList
+    return groupList
 
 if __name__ == '__main__':
     query = 'milk'
-    fetchAndCompare(query)
+    province_id = 2 # temporary placeholder - add code to set this when being called
+    fetchAndCompare(query, 2)
