@@ -28,6 +28,7 @@ import json
 class DBINSERT:
     def __init__(self, productGroupList:list[dict]) -> None:
         self.productList = productGroupList
+        self.province_id:int
         self.insertedPoducts = set()
         load_dotenv()
 
@@ -73,7 +74,7 @@ class DBINSERT:
         self.cur.execute(''' SELECT * FROM stores WHERE merchant_id = (%s) AND merchant_storeid = (%s)
                             LIMIT 1 ;
                             ''', (merchant_id, merchant_storeid))
-        return self.cur.fetchone()[0]
+        return self.cur.fetchone()[0] # return pk from store table entry
         
     def insert_brand(self, brand_name:str):
         self.cur.execute(''' SELECT * FROM brands WHERE brand_name = (%s)
@@ -110,36 +111,38 @@ class DBINSERT:
         total_price = float(product.get('total_price'))
         # unit_price = product.get('unit_price') - NA
         size_unit = product.get('unit')
-        # size_unit_amount = product.get('unit_amount)
+        size_unit_amount = 'TEST - uncomment comment after adding to dict' #product.get('unit_amount')
         is_available = product.get('is_available')
-        image_link = product.get('image_link')
+        image_url = product.get('image_link')
         merchant_name = product.get('merchant')
-        merchant_store_id = product.get('storeID')
+        merchant_store_id = str(product.get('storeID'))
+        merchant_store_name = '' # Modify after adding to product dict
         merchant_product_id = product.get('merchant_productId')
-        
-        # check if product in db
-        self.cur.execute(''' SELECT * FROM products WHERE lower(product_name) = lower(%s) 
-                             AND merchant_productid = (%s)
-                             LIMIT 1''', (name, merchant_product_id))
-        product_selectResult = self.cur.fetchone()
-        
-        if(product_selectResult != None):
-            # check is product was already inserted/updated in this session
-            if(product_selectResult[0] in self.insertedPoducts):
-                return
-            else:
-                self.insert_store.add(product_selectResult[0])
 
-            # if product already exisits, update the total_price column value
-            self.cur.execute() # CODE TO UPDATE THE total_price column value of the entry
-            return
-        
-     
         # insert merchant or get merchant's pk
         merchant_pk = self.insert_merchant(merchant_name)
     
         # insert store
-        store_pk = self.insert_store(1, 2, "1077", 'GRANDVIEW - VANCOUVER')
+        store_pk = self.insert_store(merchant_pk, self.province_id, merchant_store_id, merchant_store_name)
+        
+        # check if product in db
+        self.cur.execute(''' SELECT * FROM products WHERE lower(product_name) = lower(%s) 
+                             AND merchant_productid = (%s) AND store_id = (%s)
+                             LIMIT 1''', (name, merchant_product_id, store_pk))
+        product_selectResult = self.cur.fetchone()
+        
+        if(product_selectResult != None):
+            # check is product was already inserted/updated in this session
+            product_pk = int(product_selectResult[0])
+            if(product_pk in self.insertedPoducts):
+                return
+            
+            self.insertedPoducts.add(product_pk)
+            self.cur.execute(''' UPDATE products SET total_price = (%s)
+                                 WHERE product_id = (%s)''', (total_price, product_pk)) # CODE TO UPDATE THE total_price column value of the entry
+            return
+        
+     
 
         # insert brand
         brand_pk = self.insert_brand(brand)
@@ -149,7 +152,11 @@ class DBINSERT:
         if(meassurementUnit_pk == None):
             raise ValueError(f'''unit {size_unit} is not available in the db. Please insert this unit into the 'meassurement_units' table or correct the unit in the parser.\n\nproduct: {product}
                                 ''')
-        # insert staqtement for prodcut 
+        
+        # insert statement for prodcut 
+        self.cur.execute(''' INSERT INTO products (product_name, total_price, size_amount, store_id, is_available, image_url, merchant_productid, brand_id, size_unit)
+                             VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)''', (name, total_price, size_unit_amount, store_pk, is_available, 
+                                                                              image_url, merchant_product_id, brand_pk, meassurementUnit_pk))
 
     def dbInsertGroups(self) -> None:
         
