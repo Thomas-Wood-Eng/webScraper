@@ -1,6 +1,6 @@
 from fuzzywuzzy import fuzz
 
-def compare(safewayList, superstoreList, noFrillsList, igaList, query, DEBUG=False):    
+def compare(safewayList, superstoreList, noFrillsList, igaList, walmartList, saveOnList, query, DEBUG=False):    
 
     groupList = []
     groupID = 1
@@ -17,6 +17,14 @@ def compare(safewayList, superstoreList, noFrillsList, igaList, query, DEBUG=Fal
         superstoreMax = 0
         superstoreProduct = ""
         superstoreBrand = ""
+        
+        walmartMax = 0
+        walmartProduct = ""
+        walmartBrand = ""
+        
+        saveOnMax = 0
+        saveOnProduct = ""
+        saveOnBrand = ""
         
         for iga in igaList:
             
@@ -66,6 +74,28 @@ def compare(safewayList, superstoreList, noFrillsList, igaList, query, DEBUG=Fal
         #print(f"Superstore Brand: {superstoreBrand}")
         #print(f"Similarity Ratio: {superstoreMax}")
         
+        for walmart in walmartList:
+            
+            if walmart["brand"] != None and safeway["brand"] != None:
+                if fuzz.ratio(walmart["brand"].lower(), safeway["brand"].lower()) > 80:
+                    similarity_ratio = fuzz.ratio(walmart["name"], safeway["name"])
+                    if similarity_ratio > walmartMax:
+                        walmartMax = similarity_ratio
+                        walmartProduct = walmart["name"]
+                        walmartBrand = walmart["brand"]
+                        walmartItem = walmart
+                        
+        for saveOn in saveOnList:
+            
+            if saveOn["brand"] != None and safeway["brand"] != None:
+                if fuzz.ratio(saveOn["brand"].lower(), safeway["brand"].lower()) > 80:
+                    similarity_ratio = fuzz.ratio(saveOn["name"], safeway["name"])
+                    if similarity_ratio > saveOnMax:
+                        saveOnMax = similarity_ratio
+                        saveOnProduct = saveOn["name"]
+                        saveOnBrand = saveOn["brand"]
+                        saveOnItem = saveOn
+        
         group = {}
         
         products = []
@@ -80,6 +110,12 @@ def compare(safewayList, superstoreList, noFrillsList, igaList, query, DEBUG=Fal
             
         if superstoreMax >= 50:
             products.append(superstoreItem)
+            
+        if walmartMax >= 50:
+            products.append(walmartItem)
+            
+        if saveOnMax >= 50:
+            products.append(saveOnItem)
             
         group["groupID"] = groupID
         group["search_string"] = query

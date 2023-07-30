@@ -61,20 +61,60 @@ def fetchSaveOnMain(query):
     soup = BeautifulSoup(response.content, 'html.parser')
 
     product_list = []
+    
+    script_tag = soup.find('script', text=lambda t: "__PRELOADED_STATE__" in t)
 
-    for element in soup.select('[class="AriaProductTitleParagraph--1yc7f4f jFsEKu"]'):
-        splitString = element.text.split('$')
-        if len(splitString) > 1:
-            productName = splitString[0]
-            price = splitString[1]
-            product = {
-                'name': productName.strip(),
-                'price': price.strip()
-            }
-            product_list.append(product)
+    # Extract the JSON-like data from the script tag
+    data_start = script_tag.text.find("{")
+    data_end = script_tag.text.rfind("}") + 1
+    data = json.loads(script_tag.text[data_start:data_end])
+    
+    #print(data['search']['productCardDictionary'].items())
+    
+    for chlidId, child in data['search']['productCardDictionary'].items():
+        
+        product = {}
+        
+        brand = child['brand']
+        #print(brand)
+        name = child['name']
+        #print(name)
+        price = child['price']
+        #print(price)
+        available = child['available']
+        #print(available)
+        #unitOfPrice = child['unitOfPrice']['label']
+        #print(unitOfPrice)
+        unitOfSize = child['unitOfSize']['abbreviation']
+        #print(unitOfSize)
+        amount = child['unitOfSize']['size']
+        #print(size)
+        unitPrice = child['unitPrice']
+        #print(unitPrice)
+        productID = child['sku']
+        #print(productID)
+        image = child['image']['default']
+        #print(image)
+        
+        size = {}
+        
+        product["brand"] = brand
+        product["name"] = name
+        product["merchant"] = "Save-On-Foods"
+        #product["unit_price"] = unitPrice
+        product["total_price"] = price
+        size["amount"] = amount
+        size["unit"] = unitOfSize
+        product["size"] = size
+        product["storeID"] = ""
+        product["isAvailable"] = available
+        product["image_link"] = image
+        product["merchant_productId"] = productID
+        
+        product_list.append(product)
 
-    # data_json = json.dumps(product_list)
+    #print(product_list)
 
-    with open("fetch_SaveOn.json", "w") as outfile:
-        json.dump(product_list, outfile)
+    return product_list
 
+fetchSaveOnMain('bread')

@@ -3,6 +3,7 @@ from fetchSaveOn import fetchSaveOnMain
 from fetchSuperStore import fetchSuperstoreMain
 from fetchNoFrills import fetchNoFrillsMain
 from fetchIGABC import fetchIGABCMain
+from fetchWalmart import fetchWalmartMain
 
 from jsonParserIGABC import parseIGA
 from jsonParserSafeway import parseSafeway
@@ -27,8 +28,10 @@ def fetchAndCompare(squery:str):
     noFrillsList = parseNoFrills()
     safewayList = parseSafeway()
     superstoreList = parseSuperstore()
+    saveOnList = fetchSaveOnMain(squery)
+    walmartList = fetchWalmartMain(squery)
 
-    # deleting the fetch jsons
+        # deleting the fetch jsons
     if(not DEBUG):
         if(os.path.exists('fetch_IGA-BC.json')):
             os.remove('fetch_IGA-BC.json')
@@ -41,10 +44,13 @@ def fetchAndCompare(squery:str):
         if(os.path.exists('fetch_superstore.json')):
             os.remove('fetch_superstore.json')
 
-    groupList = compare(safewayList, superstoreList, noFrillsList, igaList, squery)
+        groupList = compare(safewayList, superstoreList, noFrillsList, igaList, walmartList, saveOnList, squery)
 
-    if(DEBUG):
         with open("matchedGroups.json", "w") as f:
             json.dump(groupList, f)
 
-    return groupList
+        return groupList
+
+if __name__ == '__main__':
+    query = 'milk'
+    fetchAndCompare(query)

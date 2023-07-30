@@ -30,22 +30,24 @@ def parseSafeway():
             # print(price)
             product["total_price"] = price
             
-            unit_price = product_data["price"]["unit"]["current"]["amount"]
-            product["unit_price"] = unit_price
+            #unit_price = product_data["price"]["unit"]["current"]["amount"]
+            #product["unit_price"] = unit_price
             
             """label = product_data["price"]["unit"]["label"]
             match = re.search(r"\d+(\D+)", label)
             letters = re.sub(" \d+", " ", match.group(1))
             product["unit"] = letters"""
             
-            label = product_data["price"]["unit"]["label"]
-            match = re.search(r"\d+(\D+)", label)
+            size = {}
 
-            if match:
+            #label = product_data["price"]["unit"]["label"]
+            #match = re.search(r"\d+(\D+)", label)
+
+            #if match:
                 #letters = re.sub(r" \d+", " ", match.group(1))
-                product["unit"] = match.group(1)
-            else:
-                product["unit"] = ""
+            #    size["unit"] = match.group(1)
+            #else:
+            #    size["unit"] = ""
             
         if "isInCurrentCatalog" in product_data:
             available = product_data["isInCurrentCatalog"]
@@ -56,19 +58,22 @@ def parseSafeway():
             product["image_link"] = img
             
         if "size" in product_data:
-            size = product_data["size"]["value"]
-            product["amount"] = size
+            sizeData = product_data["size"]["value"]
+            size["amount"] = sizeData
+            size["unit"] =  re.sub(r'[^a-zA-Z\s]', '', sizeData)
             
         product["merchant"] = "Safeway"
         
         product["storeID"] = ""
+        
+        product["size"] = size
         
         if "productId" in product_data:
             product["merchant_productId"] = product_data["productId"]
         
         productList.append(product)
         
-    # print(productList)   
+    #print(productList)   
     return(productList)
 
 if __name__ == '__main__':

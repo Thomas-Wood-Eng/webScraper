@@ -27,12 +27,13 @@ def loblaws(data):
     for product_data in data["results"]:
     
         product = {}
+        
+        size = {}
     
         if "brand" in product_data:
             brand = product_data["brand"]
             # print(brand)
             product["brand"] = brand
-        
         
         if "name" in product_data:
             name = product_data["name"]
@@ -44,15 +45,16 @@ def loblaws(data):
             product["total_price"] = price
             
             
-            unit_price = product_data["prices"]["comparisonPrices"][0]["value"]
-            product["unit_price"] = unit_price
+            #unit_price = product_data["prices"]["comparisonPrices"][0]["value"]
+            #product["unit_price"] = unit_price
             
-            unit = product_data["prices"]["comparisonPrices"][0]["unit"]
-            product["unit"] = unit
+            #unit = product_data["prices"]["comparisonPrices"][0]["unit"]
             
         if "packageSize" in product_data:
-            size = product_data["packageSize"]
-            product["amount"] = size
+            packageSize = product_data["packageSize"]
+            size["amount"] = packageSize
+            size["unit"] = packageSize.split()[1]
+
             
             
         if "shoppable" in product_data:
@@ -72,10 +74,12 @@ def loblaws(data):
             product["image_link"] = image
             
         product["storeID"] = ""
+        
+        product["size"] = size
             
         productList.append(product)
     
-    # print(productList)
+    print(productList)
     return(productList)
 
 if __name__ == '__main__':
