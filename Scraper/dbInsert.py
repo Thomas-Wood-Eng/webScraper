@@ -165,7 +165,6 @@ class DBINSERT:
         self.dbInsertProduct(product)
 
         # insert group
-        pass
 
     def __del__(self):
         self.conn.commit()
