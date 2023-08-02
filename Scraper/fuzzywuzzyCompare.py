@@ -105,11 +105,6 @@ def compare(safewayList, superstoreList, noFrillsList, igaList, walmartList, sav
                             igaProduct = iga["name"]
                             igaBrand = iga["brand"]
                             igaItem = iga
-
-            #print(f"item Product: {item}")
-            #print(f"IGA Product: {igaProduct}")
-            #print(f"IGA Brand: {igaBrand}")
-            #print(f"Similarity Ratio: {igaMax}")
             
             for noFrills in noFrillsList:
                 
@@ -144,11 +139,6 @@ def compare(safewayList, superstoreList, noFrillsList, igaList, walmartList, sav
                                 noFrillsBrand = noFrills["brand"]
                                 noFrillsItem = noFrills
 
-            #print(f"item Product: {item}")
-            #print(f"NoFrills Product: {noFrillsProduct}")
-            #print(f"NoFrills Brand: {noFrillsBrand}")
-            #print(f"Similarity Ratio: {noFrillsMax}")
-            
             for superstore in superstoreList:
                 
                 if item["merchant"].lower() == "superstore":
@@ -181,11 +171,6 @@ def compare(safewayList, superstoreList, noFrillsList, igaList, walmartList, sav
                                 superstoreProduct = superstore["name"]
                                 superstoreBrand = superstore["brand"]
                                 superstoreItem = superstore
-
-            #print(f"item Product: {item}")
-            #print(f"Superstore Product: {superstoreProduct}")
-            #print(f"Superstore Brand: {superstoreBrand}")
-            #print(f"Similarity Ratio: {superstoreMax}")
             
             for walmart in walmartList:
                 
