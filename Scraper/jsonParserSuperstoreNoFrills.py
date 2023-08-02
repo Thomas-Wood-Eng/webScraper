@@ -73,6 +73,7 @@ def loblaws(data):
             
         productList.append(product)
     
+    #print(productList)
     return(productList)
 
 if __name__ == '__main__':
