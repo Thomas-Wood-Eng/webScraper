@@ -1,8 +1,8 @@
 from fuzzywuzzy import fuzz
 
-def compare(safewayList, superstoreList, noFrillsList, igaList, walmartList, saveOnList, query, DEBUG=False):    
+def compare(safewayList, superstoreList, noFrillsList, igaList, walmartList, saveOnList, query, province_id, DEBUG=False):    
 
-    groupList = []
+    groups = []
     groupID = 1
 
     for safeway in safewayList:
@@ -37,11 +37,6 @@ def compare(safewayList, superstoreList, noFrillsList, igaList, walmartList, sav
                         igaBrand = iga["brand"]
                         igaItem = iga
 
-        #print(f"Safeway Product: {safeway}")
-        #print(f"IGA Product: {igaProduct}")
-        #print(f"IGA Brand: {igaBrand}")
-        #print(f"Similarity Ratio: {igaMax}")
-        
         for noFrills in noFrillsList:
             
             if noFrills["brand"] != None and safeway["brand"] != None:
@@ -52,11 +47,6 @@ def compare(safewayList, superstoreList, noFrillsList, igaList, walmartList, sav
                         noFrillsProduct = noFrills["name"]
                         noFrillsBrand = noFrills["brand"]
                         noFrillsItem = noFrills
-
-        #print(f"Safeway Product: {safeway}")
-        #print(f"NoFrills Product: {noFrillsProduct}")
-        #print(f"NoFrills Brand: {noFrillsBrand}")
-        #print(f"Similarity Ratio: {noFrillsMax}")
         
         for superstore in superstoreList:
             
@@ -69,10 +59,6 @@ def compare(safewayList, superstoreList, noFrillsList, igaList, walmartList, sav
                         superstoreBrand = superstore["brand"]
                         superstoreItem = superstore
 
-        #print(f"Safeway Product: {safeway}")
-        #print(f"Superstore Product: {superstoreProduct}")
-        #print(f"Superstore Brand: {superstoreBrand}")
-        #print(f"Similarity Ratio: {superstoreMax}")
         
         for walmart in walmartList:
             
@@ -118,13 +104,18 @@ def compare(safewayList, superstoreList, noFrillsList, igaList, walmartList, sav
             products.append(saveOnItem)
             
         group["groupID"] = groupID
-        group["search_string"] = query
         group["products"] = products
         
-        groupList.append(group)
+        groups.append(group)
         
         groupID += 1
     
+    groupList = {
+        'search_query' : query,
+        'province_id' : province_id,
+        'groups' : groups
+    }
+
     if(DEBUG):
         print(groupList)
     return groupList
