@@ -16,6 +16,7 @@ Steps:
 
 import psycopg2
 import os
+import utils
 from dotenv import load_dotenv
 
 # parser imports
@@ -26,9 +27,10 @@ import json
 
 
 class DBINSERT:
-    def __init__(self, productGroupList:list[dict]) -> None:
+    def __init__(self, productGroupList:dict) -> None:
         self.productList = productGroupList
         self.province_id:int
+        self.searh_query:str
         self.insertedPoducts = set()
         load_dotenv()
 
@@ -68,7 +70,7 @@ class DBINSERT:
         if(store != None):
             return store[0] # return pk from store table entry
         
-        self.cur.execute(''' INSERT INTO sotres (merchant_id, province_id, merchant_storeid, location_name)
+        self.cur.execute(''' INSERT INTO stores (merchant_id, province_id, merchant_storeid, location_name)
                              VALUES (%s, %s, %s, %s);''', (merchant_id, province_id, merchant_storeid, location_name))
         
         self.cur.execute(''' SELECT * FROM stores WHERE merchant_id = (%s) AND merchant_storeid = (%s)
@@ -108,11 +110,10 @@ class DBINSERT:
     def dbInsertProduct(self, product:dict):
         name = product.get('name')
         brand = product.get('brand')
-        total_price = float(product.get('total_price'))
-        # unit_price = product.get('unit_price') - NA
-        size_unit = product.get('unit')
-        size_unit_amount = 'TEST - uncomment comment after adding to dict' #product.get('unit_amount')
-        is_available = product.get('is_available')
+        total_price = utils.extract_decimal_value(str(product.get('total_price')))
+        size_unit = product.get('size').get('unit')
+        size_unit_amount = utils.extract_decimal_value(product.get('size').get('amount'))
+        is_available = bool(product.get('is_available'))
         image_url = product.get('image_link')
         merchant_name = product.get('merchant')
         merchant_store_id = str(product.get('storeID'))
@@ -124,7 +125,7 @@ class DBINSERT:
     
         # insert store
         store_pk = self.insert_store(merchant_pk, self.province_id, merchant_store_id, merchant_store_name)
-        
+                
         # check if product in db
         self.cur.execute(''' SELECT * FROM products WHERE lower(product_name) = lower(%s) 
                              AND merchant_productid = (%s) AND store_id = (%s)
@@ -140,7 +141,7 @@ class DBINSERT:
             self.insertedPoducts.add(product_pk)
             self.cur.execute(''' UPDATE products SET total_price = (%s)
                                  WHERE product_id = (%s)''', (total_price, product_pk)) # CODE TO UPDATE THE total_price column value of the entry
-            return
+            return product_pk
         
      
 
@@ -158,13 +159,24 @@ class DBINSERT:
                              VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)''', (name, total_price, size_unit_amount, store_pk, is_available, 
                                                                               image_url, merchant_product_id, brand_pk, meassurementUnit_pk))
 
-    def dbInsertGroups(self) -> None:
-        
-        # insert product(s)
-        product = self.productList[0].get('products')[0]
-        self.dbInsertProduct(product)
+        self.cur.execute(''' SELECT * FROM PRODUCTS
+                                 ORDER BY product_id DESC''')
+        product_pk = int(self.cur.fetchone()[0])
 
-        # insert group
+    def insert_group(search_query:str):
+        pass
+        
+    def dbInsertGroups(self) -> None:
+        self.province_id = self.productList.get('province_id')
+        self.searh_query = self.productList.get('search_query')
+        groups = self.productList.get('groups')
+        for grp in groups:
+            groupID = grp.get('groupID')
+            products = grp.get('products')
+            # insert group and get pk of group to be used in the for loop
+            for prod in products:
+                prod_pk = self.dbInsertProduct(prod)
+                 # insert into the product_groupings table
 
     def __del__(self):
         self.conn.commit()
