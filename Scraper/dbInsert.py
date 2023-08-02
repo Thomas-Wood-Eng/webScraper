@@ -27,6 +27,7 @@ import json
 
 
 class DBINSERT:
+
     def __init__(self, productGroupList:dict) -> None:
         self.productList = productGroupList
         self.province_id:int
@@ -70,6 +71,7 @@ class DBINSERT:
         if(store != None):
             return store[0] # return pk from store table entry
         
+
         self.cur.execute(''' INSERT INTO stores (merchant_id, province_id, merchant_storeid, location_name)
                              VALUES (%s, %s, %s, %s);''', (merchant_id, province_id, merchant_storeid, location_name))
         
@@ -125,7 +127,7 @@ class DBINSERT:
     
         # insert store
         store_pk = self.insert_store(merchant_pk, self.province_id, merchant_store_id, merchant_store_name)
-                
+
         # check if product in db
         self.cur.execute(''' SELECT * FROM products WHERE lower(product_name) = lower(%s) 
                              AND merchant_productid = (%s) AND store_id = (%s)
@@ -141,6 +143,7 @@ class DBINSERT:
             self.insertedPoducts.add(product_pk)
             self.cur.execute(''' UPDATE products SET total_price = (%s)
                                  WHERE product_id = (%s)''', (total_price, product_pk)) # CODE TO UPDATE THE total_price column value of the entry
+
             return product_pk
         
      
@@ -158,6 +161,7 @@ class DBINSERT:
         self.cur.execute(''' INSERT INTO products (product_name, total_price, size_amount, store_id, is_available, image_url, merchant_productid, brand_id, size_unit)
                              VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)''', (name, total_price, size_unit_amount, store_pk, is_available, 
                                                                               image_url, merchant_product_id, brand_pk, meassurementUnit_pk))
+
 
         self.cur.execute(''' SELECT * FROM PRODUCTS
                                  ORDER BY product_id DESC''')
