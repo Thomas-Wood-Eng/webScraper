@@ -3,9 +3,8 @@ import cv2
 import requests
 from io import BytesIO
 import numpy as np
-from skimage.metrics import structural_similarity as ssim
-from scipy import signal
-from scipy.ndimage import uniform_filter
+from imageCompare import compare_images
+from utils import clean
 
 def compare(safewayList, superstoreList, noFrillsList, igaList, walmartList, saveOnList, query, province_id, DEBUG=False):    
 
@@ -51,28 +50,28 @@ def compare(safewayList, superstoreList, noFrillsList, igaList, walmartList, sav
                     #print(compare_images(image1, image2))
                     
                     if fuzz.ratio(safeway["brand"].lower(), item["brand"].lower()) > 80:
-                        similarity_ratio = fuzz.ratio(iga["name"], item["name"])
-                        url = item["image_link"]
-                        if url != None:
-                            response = requests.get(url)
-                            image_data = BytesIO(response.content)
+                        similarity_ratio = fuzz.ratio(clean(safeway["name"], safeway["brand"]), clean(item["name"], item["brand"]))
+                        # url = item["image_link"]
+                        # if url != None:
+                        #     response = requests.get(url)
+                        #     image_data = BytesIO(response.content)
                             
-                            image_np = np.asarray(bytearray(image_data.read()), dtype=np.uint8)
-                            image1 = cv2.imdecode(image_np, cv2.IMREAD_COLOR)
+                        #     image_np = np.asarray(bytearray(image_data.read()), dtype=np.uint8)
+                        #     image1 = cv2.imdecode(image_np, cv2.IMREAD_COLOR)
                             
-                        url = safeway["image_link"]
-                        if url != None:
-                            response = requests.get(url)
-                            image_data = BytesIO(response.content)
+                        # url = safeway["image_link"]
+                        # if url != None:
+                        #     response = requests.get(url)
+                        #     image_data = BytesIO(response.content)
                             
-                            image_np = np.asarray(bytearray(image_data.read()), dtype=np.uint8)
-                            image2 = cv2.imdecode(image_np, cv2.IMREAD_COLOR)
+                        #     image_np = np.asarray(bytearray(image_data.read()), dtype=np.uint8)
+                        #     image2 = cv2.imdecode(image_np, cv2.IMREAD_COLOR)
                             
-                        imageComparison = compare_images(image1, image2)
-                        if similarity_ratio + 2*imageComparison > igaMax:                         
-                            safewayMax = similarity_ratio + imageComparison
-                            safewayProduct = iga["name"]
-                            safewayBrand = iga["brand"]
+                        # imageComparison = compare_images(image1, image2)
+                        if similarity_ratio > igaMax:                         
+                            safewayMax = similarity_ratio
+                            safewayProduct = safeway["name"]
+                            safewayBrand = safeway["brand"]
                             safewayItem = safeway
             
             for iga in igaList:
@@ -82,25 +81,25 @@ def compare(safewayList, superstoreList, noFrillsList, igaList, walmartList, sav
                 if iga["brand"] != None and item["brand"] != None:
                 
                     if fuzz.ratio(iga["brand"].lower(), item["brand"].lower()) > 80:
-                        similarity_ratio = fuzz.ratio(iga["name"], item["name"])
-                        url = item["image_link"]
-                        if url != None:
-                            response = requests.get(url)
-                            image_data = BytesIO(response.content)
+                        similarity_ratio = fuzz.ratio(clean(iga["name"], iga["brand"]), clean(item["name"], item["brand"]))
+                        # url = item["image_link"]
+                        # if url != None:
+                        #     response = requests.get(url)
+                        #     image_data = BytesIO(response.content)
                             
-                            image_np = np.asarray(bytearray(image_data.read()), dtype=np.uint8)
-                            image1 = cv2.imdecode(image_np, cv2.IMREAD_COLOR)
+                        #     image_np = np.asarray(bytearray(image_data.read()), dtype=np.uint8)
+                        #     image1 = cv2.imdecode(image_np, cv2.IMREAD_COLOR)
                             
-                        url = iga["image_link"]
-                        if url != None:
-                            response = requests.get(url)
-                            image_data = BytesIO(response.content)
+                        # url = iga["image_link"]
+                        # if url != None:
+                        #     response = requests.get(url)
+                        #     image_data = BytesIO(response.content)
                             
-                            image_np = np.asarray(bytearray(image_data.read()), dtype=np.uint8)
-                            image2 = cv2.imdecode(image_np, cv2.IMREAD_COLOR)
+                        #     image_np = np.asarray(bytearray(image_data.read()), dtype=np.uint8)
+                        #     image2 = cv2.imdecode(image_np, cv2.IMREAD_COLOR)
                             
-                        imageComparison = compare_images(image1, image2)
-                        if similarity_ratio + 2*imageComparison > igaMax:
+                        # imageComparison = compare_images(image1, image2)
+                        if similarity_ratio > igaMax:
                             igaMax = similarity_ratio
                             igaProduct = iga["name"]
                             igaBrand = iga["brand"]
@@ -115,25 +114,25 @@ def compare(safewayList, superstoreList, noFrillsList, igaList, walmartList, sav
                 
                     if noFrills["brand"] != None and item["brand"] != None:
                         if fuzz.ratio(noFrills["brand"].lower(), item["brand"].lower()) > 80:
-                            similarity_ratio = fuzz.ratio(noFrills["name"], item["name"])
-                            url = item["image_link"]
-                            if url != None:
-                                response = requests.get(url)
-                                image_data = BytesIO(response.content)
+                            similarity_ratio = fuzz.ratio(clean(noFrills["name"], noFrills["brand"]), clean(item["name"], item["brand"]))
+                            # url = item["image_link"]
+                            # if url != None:
+                            #     response = requests.get(url)
+                            #     image_data = BytesIO(response.content)
                                 
-                                image_np = np.asarray(bytearray(image_data.read()), dtype=np.uint8)
-                                image1 = cv2.imdecode(image_np, cv2.IMREAD_COLOR)
+                            #     image_np = np.asarray(bytearray(image_data.read()), dtype=np.uint8)
+                            #     image1 = cv2.imdecode(image_np, cv2.IMREAD_COLOR)
                                 
-                            url = noFrills["image_link"]
-                            if url != None:
-                                response = requests.get(url)
-                                image_data = BytesIO(response.content)
+                            # url = noFrills["image_link"]
+                            # if url != None:
+                            #     response = requests.get(url)
+                            #     image_data = BytesIO(response.content)
                                 
-                                image_np = np.asarray(bytearray(image_data.read()), dtype=np.uint8)
-                                image2 = cv2.imdecode(image_np, cv2.IMREAD_COLOR)
+                            #     image_np = np.asarray(bytearray(image_data.read()), dtype=np.uint8)
+                            #     image2 = cv2.imdecode(image_np, cv2.IMREAD_COLOR)
                                 
-                            imageComparison = compare_images(image1, image2)
-                            if similarity_ratio + 2*imageComparison > noFrillsMax:
+                            # imageComparison = compare_images(image1, image2)
+                            if similarity_ratio > noFrillsMax:
                                 noFrillsMax = similarity_ratio
                                 noFrillsProduct = noFrills["name"]
                                 noFrillsBrand = noFrills["brand"]
@@ -148,25 +147,25 @@ def compare(safewayList, superstoreList, noFrillsList, igaList, walmartList, sav
 
                     if superstore["brand"] != None and item["brand"] != None:
                         if fuzz.ratio(superstore["brand"].lower(), item["brand"].lower()) > 80:
-                            similarity_ratio = fuzz.ratio(superstore["name"], item["name"])
-                            url = item["image_link"]
-                            if url != None:
-                                response = requests.get(url)
-                                image_data = BytesIO(response.content)
+                            similarity_ratio = fuzz.ratio(clean(superstore["name"], superstore["brand"]), clean(item["name"], item["brand"]))
+                            # url = item["image_link"]
+                            # if url != None:
+                            #     response = requests.get(url)
+                            #     image_data = BytesIO(response.content)
                                 
-                                image_np = np.asarray(bytearray(image_data.read()), dtype=np.uint8)
-                                image1 = cv2.imdecode(image_np, cv2.IMREAD_COLOR)
+                            #     image_np = np.asarray(bytearray(image_data.read()), dtype=np.uint8)
+                            #     image1 = cv2.imdecode(image_np, cv2.IMREAD_COLOR)
                                 
-                            url = superstore["image_link"]
-                            if url != None:
-                                response = requests.get(url)
-                                image_data = BytesIO(response.content)
+                            # url = superstore["image_link"]
+                            # if url != None:
+                            #     response = requests.get(url)
+                            #     image_data = BytesIO(response.content)
                                 
-                                image_np = np.asarray(bytearray(image_data.read()), dtype=np.uint8)
-                                image2 = cv2.imdecode(image_np, cv2.IMREAD_COLOR)
+                            #     image_np = np.asarray(bytearray(image_data.read()), dtype=np.uint8)
+                            #     image2 = cv2.imdecode(image_np, cv2.IMREAD_COLOR)
                                 
-                            imageComparison = compare_images(image1, image2)
-                            if similarity_ratio + 2*imageComparison > superstoreMax:
+                            # imageComparison = compare_images(image1, image2)
+                            if similarity_ratio > superstoreMax:
                                 superstoreMax = similarity_ratio
                                 superstoreProduct = superstore["name"]
                                 superstoreBrand = superstore["brand"]
@@ -181,25 +180,25 @@ def compare(safewayList, superstoreList, noFrillsList, igaList, walmartList, sav
                 
                     if walmart["brand"] != None and item["brand"] != None:
                         if fuzz.ratio(walmart["brand"].lower(), item["brand"].lower()) > 80:
-                            similarity_ratio = fuzz.ratio(walmart["name"], item["name"])
-                            url = item["image_link"]
-                            if url != None:
-                                response = requests.get(url)
-                                image_data = BytesIO(response.content)
+                            similarity_ratio = fuzz.ratio(clean(walmart["name"], walmart["brand"]), clean(item["name"], item["brand"]))
+                            # url = item["image_link"]
+                            # if url != None:
+                            #     response = requests.get(url)
+                            #     image_data = BytesIO(response.content)
                                 
-                                image_np = np.asarray(bytearray(image_data.read()), dtype=np.uint8)
-                                image1 = cv2.imdecode(image_np, cv2.IMREAD_COLOR)
+                            #     image_np = np.asarray(bytearray(image_data.read()), dtype=np.uint8)
+                            #     image1 = cv2.imdecode(image_np, cv2.IMREAD_COLOR)
                                 
-                            url = walmart["image_link"]
-                            if url != None:
-                                response = requests.get(url)
-                                image_data = BytesIO(response.content)
+                            # url = walmart["image_link"]
+                            # if url != None:
+                            #     response = requests.get(url)
+                            #     image_data = BytesIO(response.content)
                                 
-                                image_np = np.asarray(bytearray(image_data.read()), dtype=np.uint8)
-                                image2 = cv2.imdecode(image_np, cv2.IMREAD_COLOR)
+                            #     image_np = np.asarray(bytearray(image_data.read()), dtype=np.uint8)
+                            #     image2 = cv2.imdecode(image_np, cv2.IMREAD_COLOR)
                                 
-                            imageComparison = compare_images(image1, image2)
-                            if similarity_ratio + 2*imageComparison > walmartMax:
+                            # imageComparison = compare_images(image1, image2)
+                            if similarity_ratio > walmartMax:
                                 walmartMax = similarity_ratio
                                 walmartProduct = walmart["name"]
                                 walmartBrand = walmart["brand"]
@@ -214,25 +213,25 @@ def compare(safewayList, superstoreList, noFrillsList, igaList, walmartList, sav
                 
                     if saveOn["brand"] != None and item["brand"] != None:
                         if fuzz.ratio(saveOn["brand"].lower(), item["brand"].lower()) > 80:
-                            similarity_ratio = fuzz.ratio(saveOn["name"], item["name"])
-                            url = item["image_link"]
-                            if url != None:
-                                response = requests.get(url)
-                                image_data = BytesIO(response.content)
+                            similarity_ratio = fuzz.ratio(clean(saveOn["name"], saveOn["brand"]), clean(item["name"], item["brand"]))
+                            # url = item["image_link"]
+                            # if url != None:
+                            #     response = requests.get(url)
+                            #     image_data = BytesIO(response.content)
                                 
-                                image_np = np.asarray(bytearray(image_data.read()), dtype=np.uint8)
-                                image1 = cv2.imdecode(image_np, cv2.IMREAD_COLOR)
+                            #     image_np = np.asarray(bytearray(image_data.read()), dtype=np.uint8)
+                            #     image1 = cv2.imdecode(image_np, cv2.IMREAD_COLOR)
                                 
-                            url = saveOn["image_link"]
-                            if url != None:
-                                response = requests.get(url)
-                                image_data = BytesIO(response.content)
+                            # url = saveOn["image_link"]
+                            # if url != None:
+                            #     response = requests.get(url)
+                            #     image_data = BytesIO(response.content)
                                 
-                                image_np = np.asarray(bytearray(image_data.read()), dtype=np.uint8)
-                                image2 = cv2.imdecode(image_np, cv2.IMREAD_COLOR)
+                            #     image_np = np.asarray(bytearray(image_data.read()), dtype=np.uint8)
+                            #     image2 = cv2.imdecode(image_np, cv2.IMREAD_COLOR)
                                 
-                            imageComparison = compare_images(image1, image2)
-                            if similarity_ratio + 2*imageComparison > saveOnMax:
+                            # imageComparison = compare_images(image1, image2)
+                            if similarity_ratio > saveOnMax:
                                 saveOnMax = similarity_ratio
                                 saveOnProduct = saveOn["name"]
                                 saveOnBrand = saveOn["brand"]
@@ -242,31 +241,31 @@ def compare(safewayList, superstoreList, noFrillsList, igaList, walmartList, sav
             
             products = []
             
-            if safewayMax >= 50:
+            if safewayMax >= 60:
                 products.append(safeway)
             
-            if igaMax >= 50:
+            if igaMax >= 60:
                 products.append(igaItem)
                 
-            if noFrillsMax >= 50:
+            if noFrillsMax >= 60:
                 products.append(noFrillsItem)
                 
-            if superstoreMax >= 50:
+            if superstoreMax >= 60:
                 products.append(superstoreItem)
                 
-            if walmartMax >= 50:
+            if walmartMax >= 60:
                 products.append(walmartItem)
                 
-            if saveOnMax >= 50:
+            if saveOnMax >= 60:
                 products.append(saveOnItem)
                 
             group["groupID"] = groupID
-            group["search_string"] = query
+            #group["search_string"] = query
             group["products"] = products
             
             if len(group["products"]) >= 1:
             
-                groupList.append(group)
+                groups.append(group)
             
                 groupID += 1
     
@@ -281,50 +280,3 @@ def compare(safewayList, superstoreList, noFrillsList, igaList, walmartList, sav
     return groupList
 
 
-#Thanks Chat
-def ssim(image1, image2, win_size=11, L=255):
-    # Ensure images are numpy arrays
-    image1 = np.array(image1)
-    image2 = np.array(image2)
-
-    # Calculate constants for SSIM
-    K1 = 0.01
-    K2 = 0.03
-    C1 = (K1 * L) ** 2
-    C2 = (K2 * L) ** 2
-
-    # Calculate means, variances, and covariances
-    mu1 = uniform_filter(image1, win_size)
-    mu2 = uniform_filter(image2, win_size)
-    mu1_sq = mu1 * mu1
-    mu2_sq = mu2 * mu2
-    mu12 = mu1 * mu2
-    sigma1_sq = uniform_filter(image1 * image1, win_size) - mu1_sq
-    sigma2_sq = uniform_filter(image2 * image2, win_size) - mu2_sq
-    sigma12 = uniform_filter(image1 * image2, win_size) - mu12
-
-    # Calculate SSIM
-    num = (2 * mu12 + C1) * (2 * sigma12 + C2)
-    den = (mu1_sq + mu2_sq + C1) * (sigma1_sq + sigma2_sq + C2)
-    ssim_map = num / den
-    ssim_score = np.mean(ssim_map)
-
-    return ssim_score
-
-def compare_images(image1, image2):
-    # Load images
-    if isinstance(image1, str):
-        image1 = cv2.imread(image1, cv2.IMREAD_GRAYSCALE)
-    if isinstance(image2, str):
-        image2 = cv2.imread(image2, cv2.IMREAD_GRAYSCALE)
-
-    # Resize the smaller image to match the dimensions of the larger image
-    if image1.shape != image2.shape:
-        min_height = min(image1.shape[0], image2.shape[0])
-        min_width = min(image1.shape[1], image2.shape[1])
-        image1 = cv2.resize(image1, (min_width, min_height), interpolation=cv2.INTER_LINEAR)
-        image2 = cv2.resize(image2, (min_width, min_height), interpolation=cv2.INTER_LINEAR)
-
-    # Compute SSIM
-    similarity_score = ssim(image1, image2)
-    return similarity_score
