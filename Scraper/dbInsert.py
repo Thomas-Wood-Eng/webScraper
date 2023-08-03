@@ -116,13 +116,13 @@ class DBINSERT:
         brand = product.get('brand')
         total_price = utils.extract_decimal_value(str(product.get('total_price')))
         size_unit = product.get('size').get('unit')
-        size_unit_amount = utils.extract_decimal_value(product.get('size').get('amount'))
+        size_unit_amount = utils.extract_decimal_value(str(product.get('size').get('amount')))
         is_available = bool(product.get('is_available'))
         image_url = product.get('image_link')
         merchant_name = product.get('merchant')
         merchant_store_id = str(product.get('storeID'))
         merchant_store_name = '' # Modify after adding to product dict
-        merchant_product_id = product.get('merchant_productId')
+        merchant_product_id = str(product.get('merchant_productId'))
 
         # insert merchant or get merchant's pk
         merchant_pk = self.insert_merchant(merchant_name)
@@ -140,7 +140,7 @@ class DBINSERT:
             # check is product was already inserted/updated in this session
             product_pk = int(product_selectResult[0])
             if(product_pk in self.insertedPoducts):
-                return
+                return product_pk
             
             self.insertedPoducts.add(product_pk)
             self.cur.execute(''' UPDATE products SET total_price = (%s)
@@ -165,53 +165,41 @@ class DBINSERT:
 
         self.cur.execute(''' SELECT * FROM PRODUCTS
                                  ORDER BY product_id DESC''')
-        product_pk = int(self.cur.fetchone()[0])
+        return int(self.cur.fetchone()[0])
 
-    def insert_group(search_query:str):
-        pass
+    def insert_group(self, search_query:str):
+        # this table can have multiple goups that fall under a single search query,
+        # thus a check for any existing grouops are not needed
+        self.cur.execute(''' INSERT INTO product_groups (search_query)
+                             VALUES (%s)''', (search_query,))
+        self.cur.execute(''' SELECT * FROM product_groups
+                                 ORDER BY group_id DESC''')
+        return int(self.cur.fetchone()[0]) # return pk of group
+        
+    
         
     def dbInsertGroups(self) -> None:
         self.province_id = self.productList.get('province_id')
-        self.searh_query = self.productList.get('search_query')
+        searh_query = self.productList.get('search_query')
         groups = self.productList.get('groups')
         for grp in groups:
-            groupID = grp.get('groupID')
+            group_pk = self.insert_group(searh_query)
             products = grp.get('products')
             # insert group and get pk of group to be used in the for loop
             for prod in products:
                 prod_pk = self.dbInsertProduct(prod)
-                 # insert into the product_groupings table
-        
-    def dbInsertGroups(self) -> None:
-        self.province_id = self.productList.get('province_id')
-        self.searh_query = self.productList.get('search_query')
-        groups = self.productList.get('groups')
-        for grp in groups:
-            groupID = grp.get('groupID')
-            products = grp.get('products')
-            # insert group and get pk of group to be used in the for loop
-            for prod in products:
-                prod_pk = self.dbInsertProduct(prod)
-                 # insert into the product_groupings table
+                if(prod_pk == None):
+                    print(prod)
+                    raise ValueError
+                # insert into the product_groupings table
+                # self.cur.execute(''' INSERT INTO product_groupings (group_id, product_id)
+                #                      VALUES (%s, %s) ''', (group_pk, prod_pk))
 
     def __del__(self):
         self.conn.commit()
         self.cur.close()
         self.conn.close()
-    def __del__(self):
-        self.conn.commit()
-        self.cur.close()
-        self.conn.close()
 
-
-if __name__ == '__main__':
-    # uncommment line below to run the fethc and parsers - commented to skip this for debuggin
-    # productList = fetchAndCompare('milk')
-    with open('matchedGroups.json') as json_file:
-        productList = json.load(json_file)
-    dbInsert = DBINSERT(productList)
-    dbInsert.connect()
-    dbInsert.dbInsertGroups()
 if __name__ == '__main__':
     # uncommment line below to run the fethc and parsers - commented to skip this for debuggin
     # productList = fetchAndCompare('milk')
