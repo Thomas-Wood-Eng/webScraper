@@ -18,3 +18,14 @@ def extract_decimal_value(input_string):
         else:
             # If no decimal value is found, return None or raise an exception
             return None
+
+def clean(text, word_to_remove):
+    # Remove special characters using regular expressions
+    cleaned_text = re.sub(r"[^a-zA-Z0-9\s]", "", text)
+
+    # Remove the specified word (case-insensitive)
+    cleaned_text = re.sub(fr"\b{re.escape(word_to_remove)}\b", "", cleaned_text, flags=re.IGNORECASE)
+    
+    cleaned_text = cleaned_text.lower()
+
+    return cleaned_text

@@ -17,8 +17,12 @@ Steps:
 import psycopg2
 import os
 import utils
+import utils
 from dotenv import load_dotenv
 
+# parser imports
+from fetchMain import fetchAndCompare
+import json
 # parser imports
 from fetchMain import fetchAndCompare
 import json
@@ -177,13 +181,37 @@ class DBINSERT:
             for prod in products:
                 prod_pk = self.dbInsertProduct(prod)
                  # insert into the product_groupings table
+        
+    def dbInsertGroups(self) -> None:
+        self.province_id = self.productList.get('province_id')
+        self.searh_query = self.productList.get('search_query')
+        groups = self.productList.get('groups')
+        for grp in groups:
+            groupID = grp.get('groupID')
+            products = grp.get('products')
+            # insert group and get pk of group to be used in the for loop
+            for prod in products:
+                prod_pk = self.dbInsertProduct(prod)
+                 # insert into the product_groupings table
 
+    def __del__(self):
+        self.conn.commit()
+        self.cur.close()
+        self.conn.close()
     def __del__(self):
         self.conn.commit()
         self.cur.close()
         self.conn.close()
 
 
+if __name__ == '__main__':
+    # uncommment line below to run the fethc and parsers - commented to skip this for debuggin
+    # productList = fetchAndCompare('milk')
+    with open('matchedGroups.json') as json_file:
+        productList = json.load(json_file)
+    dbInsert = DBINSERT(productList)
+    dbInsert.connect()
+    dbInsert.dbInsertGroups()
 if __name__ == '__main__':
     # uncommment line below to run the fethc and parsers - commented to skip this for debuggin
     # productList = fetchAndCompare('milk')
