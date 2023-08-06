@@ -54,6 +54,6 @@ def fetchAndCompare(squery:str, province_id:int):
     return groupList
 
 if __name__ == '__main__':
-    query = 'milk'
+    query = 'coca cola'
     province_id = 2 # temporary placeholder - add code to set this when being called
     fetchAndCompare(query, 2)

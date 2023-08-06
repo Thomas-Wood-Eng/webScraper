@@ -120,7 +120,10 @@ def fetchWalmartMain(param):
         
         product["name"] = name
         size["amount"] = unit[0]
-        size["unit"] = unit[1]
+        try:
+            size["unit"] = unit[1]
+        except:
+            print(size)
         product["size"] = size
         product["merchant_productId"] = productID
 

@@ -89,7 +89,6 @@ def fetchSaveOnMain(query):
         #print(unitOfSize)
         amount = child['unitOfSize']['size']
         #print(size)
-        unitPrice = child['unitPrice']
         #print(unitPrice)
         productID = child['sku']
         #print(productID)
