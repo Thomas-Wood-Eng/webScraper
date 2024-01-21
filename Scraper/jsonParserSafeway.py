@@ -1,11 +1,11 @@
 import json
 import re
 
-def parseSafeway():
+def parseSafeway(data):
 
     # Read the JSON file    
-    with open('fetch_safeway.json') as f:
-        data = json.load(f)
+    # with open('fetch_safeway.json') as f:
+    #     data = json.load(f)
     
     productList = []
 

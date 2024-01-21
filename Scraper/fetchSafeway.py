@@ -51,6 +51,10 @@ def fetchSafewayMain(query):
     }
 
     response = requests.get('https://voila.ca/api/v5/products/search', params=params, cookies=cookies, headers=headers)
+    
+    return response.json()
 
-    with open("fetch_safeway.json", "w") as outfile:
-        json.dump(response.json(), outfile)
+    # filename = query + "_safeway.json"
+
+    # with open(filename, "w") as outfile:
+    #     json.dump(response.json(), outfile)

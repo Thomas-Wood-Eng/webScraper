@@ -1,18 +1,18 @@
 import json
 
-def parseNoFrills():
+def parseNoFrills(data):
     # Read the JSON file
-    with open('fetch_nofrills.json') as f:
-        data = json.load(f)
+    # with open('fetch_nofrills.json') as f:
+    #     data = json.load(f)
 
     return(loblaws(data))
     
     
         
-def parseSuperstore():
+def parseSuperstore(data):
     # Read the JSON file
-    with open('fetch_superstore.json') as f:
-        data = json.load(f)
+    # with open('fetch_superstore.json') as f:
+    #     data = json.load(f)
     return(loblaws(data))
         
 def loblaws(data):

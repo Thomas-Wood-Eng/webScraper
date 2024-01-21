@@ -1,10 +1,10 @@
 import json
 
-def parseIGA():
+def parseIGA(data):
 
     # Read the JSON file
-    with open('fetch_IGA-BC.json') as f:
-        data = json.load(f)
+    # with open('fetch_IGA-BC.json') as f:
+    #     data = json.load(f)
     
     productList = []
 

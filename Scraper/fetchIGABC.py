@@ -63,11 +63,14 @@ def fetchIGABCMain(term):
         cookies=cookies,
         headers=headers,
         json=json_data,
-)
+    )
+    
+    return response.json()
+    
+    # filename = term + "_IGA-BC.json"
 
-
-    with open("fetch_IGA-BC.json", "w") as outfile:
-        json.dump(response.json(), outfile)
+    # with open(filename, "w") as outfile:
+    #     json.dump(response.json(), outfile)
             
             
             

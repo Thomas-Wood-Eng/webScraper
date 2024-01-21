@@ -42,11 +42,15 @@ def fetchSuperstoreMain(query):
     }
 
     response = requests.post('https://api.pcexpress.ca/product-facade/v4/products/search', headers=headers, json=json_data)
+    
+    return response.json()
 
     # print(response.json())
+    
+    # filename = query + "_superstore.json"
 
-    with open("fetch_superstore.json", "w") as outfile:
-        json.dump(response.json(), outfile)
+    # with open(filename, "w") as outfile:
+    #     json.dump(response.json(), outfile)
         
 # Note: json_data will not be serialized by requests
 # exactly as it was in the original request.

@@ -42,9 +42,13 @@ def fetchNoFrillsMain(query):
     }
 
     response = requests.post('https://api.pcexpress.ca/product-facade/v4/products/search', headers=headers, json=json_data)
+    
+    return response.json()
+    
+    # filename = query + "_noFrills.json"
 
-    with open("fetch_nofrills.json", "w") as outfile:
-        json.dump(response.json(), outfile)
+    # with open(filename, "w") as outfile:
+    #     json.dump(response.json(), outfile)
 # Note: json_data will not be serialized by requests
 # exactly as it was in the original request.
 #data = '{"pagination":{"from":0,"size":48},"banner":"nofrills","cartId":"bf7c4cf0-e6fb-498d-a81a-47227c56c12e","lang":"en","date":"02072023","storeId":"7411","pcId":null,"pickupType":"STORE","term":"bread","userData":{"domainUserId":"e996cb6e-66e5-4ae1-bfa9-76860fb67e4f","sessionId":"c67428bd-fc4f-4f72-b0da-2844705cb3b2"}}'
