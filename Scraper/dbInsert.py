@@ -20,20 +20,17 @@ import utils
 import utils
 from dotenv import load_dotenv
 
+
 # parser imports
-from fetchMain import fetchAndCompare
-import json
-# parser imports
-from fetchMain import fetchAndCompare
 import json
 
 
 
 
 class DBINSERT:
-    def __init__(self, productGroupList:dict) -> None:
-        self.productList = productGroupList
-        self.province_id:int
+    def __init__(self, masterList:dict, provinceId=2) -> None:
+        self.productList = masterList
+        self.province_id = provinceId
         self.searh_query:str
         self.insertedPoducts = set()
         load_dotenv()
@@ -96,7 +93,10 @@ class DBINSERT:
         self.cur.execute(''' SELECT * FROM brands WHERE brand_name = (%s)
                             LIMIT 1 ;
                             ''', (brand_name,))
-        return self.cur.fetchone()[0]
+        try:
+            return self.cur.fetchone()[0]
+        except:
+            print(f"Brand Name: {brand_name}")
 
 
     def get_meassurementUnit_pk(self, unit:str):
@@ -150,13 +150,15 @@ class DBINSERT:
      
 
         # insert brand
+        if(brand == None):
+            brand = "None"
         brand_pk = self.insert_brand(brand)
 
         # get pk of meassurement unit
         meassurementUnit_pk = self.get_meassurementUnit_pk(size_unit)
         if(meassurementUnit_pk == None):
-            raise ValueError(f'''unit {size_unit} is not available in the db. Please insert this unit into the 'meassurement_units' table or correct the unit in the parser.\n\nproduct: {product}
-                                ''')
+            # Default meassure unit is set to 'each'
+            meassurementUnit_pk = 14 # This is the pk for the unit 'each in the database
         
         # insert statement for prodcut 
         self.cur.execute(''' INSERT INTO products (product_name, total_price, size_amount, store_id, is_available, image_url, merchant_productid, brand_id, size_unit)
@@ -167,46 +169,56 @@ class DBINSERT:
                                  ORDER BY product_id DESC''')
         return int(self.cur.fetchone()[0])
 
-    def insert_group(self, search_query:str):
-        # this table can have multiple goups that fall under a single search query,
-        # thus a check for any existing grouops are not needed
-        self.cur.execute(''' INSERT INTO product_groups (search_query)
-                             VALUES (%s)''', (search_query,))
-        self.cur.execute(''' SELECT * FROM product_groups
-                                 ORDER BY group_id DESC''')
-        return int(self.cur.fetchone()[0]) # return pk of group
+    # Takes in list of products parsed
+    def insertProductList(self):
+        for prod in self.productList:
+            print(f'Inserting {prod.get("name")}')
+            prod_pk = self.dbInsertProduct(prod)
+            if(prod_pk == None):
+                print(f'Failed to insert {prod}')
+                raise ValueError
+            print(f'Inserted {prod.get("name")}')
+            
+    # def insert_group(self, search_query:str):
+    #     # this table can have multiple goups that fall under a single search query,
+    #     # thus a check for any existing grouops are not needed
+    #     self.cur.execute(''' INSERT INTO product_groups (search_query)
+    #                          VALUES (%s)''', (search_query,))
+    #     self.cur.execute(''' SELECT * FROM product_groups
+    #                              ORDER BY group_id DESC''')
+    #     return int(self.cur.fetchone()[0]) # return pk of group
         
     
         
-    def dbInsertGroups(self) -> None:
-        self.province_id = self.productList.get('province_id')
-        searh_query = self.productList.get('search_query')
-        groups = self.productList.get('groups')
-        for grp in groups:
-            group_pk = self.insert_group(searh_query)
-            products = grp.get('products')
-            # insert group and get pk of group to be used in the for loop
-            for prod in products:
-                prod_pk = self.dbInsertProduct(prod)
-                if(prod_pk == None):
-                    print(prod)
-                    raise ValueError
-                # insert into the product_groupings table
-                # self.cur.execute(''' INSERT INTO product_groupings (group_id, product_id)
-                #                      VALUES (%s, %s) ''', (group_pk, prod_pk))
+    # def dbInsertGroups(self) -> None:
+    #     self.province_id = self.productList.get('province_id')
+    #     searh_query = self.productList.get('search_query')
+    #     groups = self.productList.get('groups')
+    #     for grp in groups:
+    #         group_pk = self.insert_group(searh_query)
+    #         products = grp.get('products')
+    #         # insert group and get pk of group to be used in the for loop
+    #         for prod in products:
+    #             prod_pk = self.dbInsertProduct(prod)
+    #             if(prod_pk == None):
+    #                 print(prod)
+    #                 raise ValueError
+    #             # insert into the product_groupings table
+    #             # self.cur.execute(''' INSERT INTO product_groupings (group_id, product_id)
+    #             #                      VALUES (%s, %s) ''', (group_pk, prod_pk))
 
     def __del__(self):
         self.conn.commit()
         self.cur.close()
         self.conn.close()
 
-if __name__ == '__main__':
-    # uncommment line below to run the fethc and parsers - commented to skip this for debuggin
-    # productList = fetchAndCompare('milk')
-    with open('matchedGroups.json') as json_file:
-        productList = json.load(json_file)
-    dbInsert = DBINSERT(productList)
-    dbInsert.connect()
-    dbInsert.dbInsertGroups()
+# if __name__ == '__main__':
+#     # uncommment line below to run the fethc and parsers - commented to skip this for debuggin
+#     # productList = fetchAndCompare('milk')
+#     with open('matchedGroups.json') as json_file:
+#         productList = json.load(json_file)
+#     dbInsert = DBINSERT(productList)
+#     dbInsert.connect()
+#     dbInsert.dbInsertGroups()
 
 
